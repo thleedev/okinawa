@@ -1,0 +1,3001 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>오키나와 9박 10일 · 나키진 가족 자유여행 (Plan2 재구성판)</title>
+<meta name="description" content="2026년 4월 28일 – 5월 7일, 나키진 베이스 가족 여행 — 동선·효율 재구성판" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Noto+Serif+KR:wght@300;400;500;600;700;900&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+/* ========== RESET & ROOT ========== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  --bg:#F1E8D4;
+  --bg-deep:#E7DBBE;
+  --paper:#F8F1DD;
+  --paper-soft:#FAF5E6;
+  --ink:#1E1C18;
+  --ink-mid:#4A453D;
+  --ink-soft:#6D665A;
+  --ink-faint:#A39C8C;
+  --line:#C9B98F;
+  --line-soft:#DACCA5;
+  --line-faint:#E7DCBE;
+  --teal:#0C3A3C;
+  --teal-mid:#1F5557;
+  --teal-light:#4B7D7F;
+  --coral:#C0452E;
+  --coral-deep:#9C3824;
+  --coral-soft:#D6876F;
+  --gold:#9C7C3A;
+  --gold-light:#C4A768;
+  --shadow-sm:0 1px 2px rgba(28,27,23,.06);
+  --shadow-md:0 4px 14px -6px rgba(28,27,23,.12), 0 1px 3px rgba(28,27,23,.06);
+}
+
+/* ========== BASE ========== */
+body{
+  font-family:'IBM Plex Sans KR','Pretendard',system-ui,sans-serif;
+  font-weight:400;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.7;
+  font-size:15px;
+  letter-spacing:-0.005em;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+  background-image:
+    radial-gradient(1200px 800px at 15% 10%, rgba(250,245,230,.55), transparent 60%),
+    radial-gradient(900px 600px at 85% 75%, rgba(12,58,60,.04), transparent 55%);
+}
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity:.09;
+  mix-blend-mode:multiply;
+  z-index:1;
+}
+
+/* ========== TYPOGRAPHY ========== */
+.serif-display{font-family:'Fraunces',serif;font-optical-sizing:auto;font-variation-settings:"SOFT" 50,"opsz" 144}
+.serif-ko{font-family:'Noto Serif KR',serif}
+.serif-ja{font-family:'Shippori Mincho',serif}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-feature-settings:"tnum"}
+.num{font-family:'Fraunces',serif;font-variation-settings:"opsz" 144,"SOFT" 100;font-feature-settings:"tnum"}
+
+h1,h2,h3,h4{font-weight:500;letter-spacing:-0.015em;line-height:1.2}
+
+a{color:inherit;text-decoration:none}
+strong,b{font-weight:600;color:var(--ink)}
+em{font-style:italic}
+
+/* ========== LAYOUT ========== */
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px;position:relative;z-index:2}
+.wrap-narrow{max-width:880px;margin:0 auto;padding:0 40px;position:relative;z-index:2}
+
+/* ========== HERO ========== */
+.hero{
+  position:relative;
+  min-height:100vh;
+  padding:64px 0 100px;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+.hero-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink-mid);
+  font-weight:500;
+}
+.hero-top .mark{display:inline-flex;align-items:center;gap:10px}
+.hero-top .mark-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--coral);
+  box-shadow:0 0 0 4px rgba(192,69,46,.14);
+}
+.hero-body{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-top:90px;
+  position:relative;
+}
+.hero-eyebrow{
+  font-family:'Shippori Mincho',serif;
+  font-size:15px;
+  color:var(--coral-deep);
+  letter-spacing:.2em;
+  font-weight:500;
+  margin-bottom:28px;
+}
+.hero-eyebrow::before{
+  content:'—— ';
+  color:var(--line);
+  letter-spacing:0;
+}
+.hero-title{
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144,"SOFT" 30;
+  font-weight:300;
+  font-size:clamp(68px,13vw,184px);
+  line-height:.92;
+  color:var(--ink);
+  letter-spacing:-.045em;
+  margin:0 0 8px;
+}
+.hero-title .it{font-style:italic;font-weight:300;color:var(--coral-deep)}
+.hero-sub{
+  font-family:'Noto Serif KR',serif;
+  font-size:clamp(20px,2.2vw,26px);
+  font-weight:400;
+  color:var(--ink-mid);
+  margin-top:24px;
+  max-width:680px;
+  line-height:1.55;
+  letter-spacing:-.015em;
+}
+.hero-meta{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+  margin-top:80px;
+  padding-top:32px;
+  border-top:1px solid var(--line);
+}
+.hero-meta-cell{
+  padding:0 24px;
+  border-right:1px dotted var(--line);
+}
+.hero-meta-cell:first-child{padding-left:0}
+.hero-meta-cell:last-child{padding-right:0;border-right:none}
+.hero-meta-label{
+  font-size:10.5px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  font-weight:500;
+  margin-bottom:10px;
+}
+.hero-meta-value{
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144;
+  font-weight:400;
+  font-size:22px;
+  color:var(--ink);
+  line-height:1.25;
+  letter-spacing:-.015em;
+}
+.hero-meta-value small{
+  display:block;
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:12.5px;
+  color:var(--ink-soft);
+  font-weight:400;
+  margin-top:4px;
+  letter-spacing:0;
+}
+
+/* Hero decorative characters */
+.hero-kanji{
+  position:absolute;
+  font-family:'Shippori Mincho',serif;
+  font-weight:800;
+  color:var(--coral);
+  opacity:.055;
+  pointer-events:none;
+  user-select:none;
+  line-height:.9;
+  z-index:0;
+}
+.hero-kanji-1{top:8%;right:-3%;font-size:clamp(280px,45vw,620px)}
+.hero-kanji-2{bottom:-8%;left:-2%;font-size:clamp(200px,30vw,420px);color:var(--teal);opacity:.04}
+
+/* Hero ornaments */
+.hero-orn{
+  position:absolute;
+  right:40px;
+  top:50%;
+  transform:translateY(-50%);
+  width:120px;
+  height:120px;
+  opacity:.85;
+}
+@media (max-width:900px){.hero-orn{display:none}}
+
+/* ========== ORNAMENTAL RULE ========== */
+.orn-rule{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin:0 auto;
+  width:100%;
+  max-width:280px;
+  color:var(--line);
+}
+.orn-rule::before,.orn-rule::after{
+  content:'';
+  flex:1;
+  height:1px;
+  background:currentColor;
+}
+.orn-rule-dot{width:5px;height:5px;border-radius:50%;background:var(--coral);box-shadow:-12px 0 0 var(--gold),12px 0 0 var(--gold)}
+
+/* ========== SECTION HEADERS ========== */
+.section{padding:110px 0;position:relative;z-index:2}
+.section-head{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:60px;
+  margin-bottom:70px;
+  align-items:end;
+}
+.section-head-num{
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144,"SOFT" 100;
+  font-style:italic;
+  font-weight:300;
+  font-size:clamp(60px,9vw,124px);
+  color:var(--coral);
+  line-height:.85;
+  letter-spacing:-.04em;
+  opacity:.95;
+}
+.section-head-num::before{
+  content:'§';
+  display:inline-block;
+  font-size:.36em;
+  vertical-align:top;
+  margin-right:.25em;
+  color:var(--gold);
+  transform:translateY(.6em);
+}
+.section-head-title{
+  font-family:'Noto Serif KR',serif;
+  font-weight:500;
+  font-size:clamp(30px,3.4vw,44px);
+  color:var(--ink);
+  line-height:1.25;
+  letter-spacing:-.02em;
+}
+.section-head-kicker{
+  font-size:11px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--coral-deep);
+  font-weight:600;
+  margin-bottom:18px;
+}
+.section-head-lead{
+  font-family:'Noto Serif KR',serif;
+  font-weight:400;
+  font-size:17px;
+  color:var(--ink-soft);
+  line-height:1.75;
+  max-width:620px;
+  margin-top:22px;
+}
+
+/* ========== OVERVIEW CARDS ========== */
+.over-grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:24px;
+}
+.over-card{
+  background:var(--paper);
+  padding:36px 34px;
+  position:relative;
+  border:1px solid var(--line-soft);
+}
+.over-card::before{
+  content:'';
+  position:absolute;
+  top:18px;right:18px;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--coral);
+}
+.over-card h3{
+  font-family:'Noto Serif KR',serif;
+  font-size:20px;
+  font-weight:600;
+  margin-bottom:22px;
+  color:var(--ink);
+  letter-spacing:-.015em;
+}
+.over-card h3 .jp{
+  display:block;
+  font-family:'Shippori Mincho',serif;
+  font-size:11px;
+  letter-spacing:.3em;
+  color:var(--gold);
+  font-weight:500;
+  margin-top:4px;
+  text-transform:none;
+}
+.over-card-1{grid-column:span 5}
+.over-card-2{grid-column:span 7}
+.over-card-3{grid-column:span 7}
+.over-card-4{grid-column:span 5}
+
+.info-rows{display:flex;flex-direction:column;gap:0}
+.info-row{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  padding:12px 0;
+  border-bottom:1px dotted var(--line);
+  align-items:baseline;
+  gap:16px;
+}
+.info-row:last-child{border-bottom:none}
+.info-row .k{
+  font-size:11.5px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  font-weight:600;
+}
+.info-row .v{
+  font-size:15px;
+  color:var(--ink);
+  font-weight:500;
+}
+.info-row .v small{
+  display:block;
+  color:var(--ink-soft);
+  font-weight:400;
+  font-size:13px;
+  margin-top:3px;
+}
+
+.group-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.group-col{
+  padding:24px 28px;
+  position:relative;
+}
+.group-col:first-child{
+  border-right:1px solid var(--line-soft);
+}
+.group-col .tag{
+  display:inline-block;
+  font-size:10.5px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  font-weight:600;
+  padding:3px 10px;
+  border-radius:2px;
+  margin-bottom:14px;
+}
+.group-col.active .tag{background:var(--coral);color:var(--paper)}
+.group-col.care .tag{background:var(--teal);color:var(--paper)}
+.group-col h4{
+  font-family:'Noto Serif KR',serif;
+  font-size:17px;
+  color:var(--ink);
+  margin-bottom:8px;
+  font-weight:600;
+}
+.group-col p{color:var(--ink-soft);font-size:13.5px;line-height:1.6}
+.group-note{
+  margin-top:22px;
+  padding-top:20px;
+  border-top:1px dotted var(--line);
+  font-family:'Noto Serif KR',serif;
+  font-weight:400;
+  font-size:14px;
+  color:var(--ink-mid);
+  font-style:italic;
+  line-height:1.7;
+}
+.group-note::before{
+  content:'↳';
+  color:var(--coral);
+  margin-right:8px;
+  font-style:normal;
+}
+
+/* ========== NAV (day list) ========== */
+.daynav{
+  position:sticky;
+  top:0;
+  z-index:30;
+  background:rgba(241,232,212,.92);
+  backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:14px 0;
+}
+.daynav-row{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.daynav-row::-webkit-scrollbar{display:none}
+.daynav-row a{
+  flex:0 0 auto;
+  padding:8px 14px 8px 12px;
+  font-size:12px;
+  font-weight:500;
+  color:var(--ink-soft);
+  border:1px solid transparent;
+  border-radius:2px;
+  transition:color .2s,border-color .2s,background .2s;
+  letter-spacing:-.01em;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  white-space:nowrap;
+}
+.daynav-row a:hover{color:var(--ink);background:var(--paper)}
+.daynav-row a.active{color:var(--coral);border-color:var(--coral)}
+.daynav-row a .d-num{
+  font-family:'Fraunces',serif;
+  font-weight:400;
+  font-size:13px;
+}
+.daynav-row a .d-tag{
+  font-size:10px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  opacity:.7;
+}
+.daynav-label{
+  font-size:10.5px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-right:14px;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+/* ========== DAY SECTION ========== */
+.day{padding:100px 0 80px;position:relative}
+.day-odd{background:linear-gradient(180deg,transparent 0%,rgba(250,245,230,.35) 50%,transparent 100%)}
+.day-split{background:linear-gradient(180deg,transparent 0%,rgba(232,220,190,.35) 50%,transparent 100%)}
+
+.day-head{
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:50px;
+  margin-bottom:48px;
+  align-items:start;
+}
+.day-tag{
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144,"SOFT" 100;
+  font-style:italic;
+  font-weight:300;
+  color:var(--coral);
+  line-height:1;
+  letter-spacing:-.04em;
+  margin-bottom:8px;
+}
+.day-tag .label{
+  display:block;
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-style:normal;
+  font-size:10.5px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  font-weight:600;
+  margin-bottom:10px;
+}
+.day-tag .num{font-size:96px;display:inline-block;line-height:.85}
+.day-tag .of{
+  font-family:'Noto Serif KR',serif;
+  font-style:normal;
+  font-size:18px;
+  color:var(--ink-soft);
+  font-weight:400;
+  margin-left:10px;
+  letter-spacing:-.01em;
+}
+.day-tag .date{
+  font-family:'Noto Serif KR',serif;
+  font-style:normal;
+  display:block;
+  font-size:16px;
+  color:var(--ink);
+  font-weight:500;
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  letter-spacing:-.01em;
+}
+.day-tag .date .holiday{
+  color:var(--coral-deep);
+  font-size:12px;
+  font-weight:500;
+  display:block;
+  margin-top:4px;
+  letter-spacing:.03em;
+}
+
+.day-headline{
+  padding-top:18px;
+}
+.day-headline .kind{
+  display:inline-block;
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  font-weight:600;
+  padding:4px 11px;
+  margin-bottom:22px;
+  border:1px solid;
+}
+.kind-all{color:var(--teal);border-color:var(--teal)}
+.kind-rest{color:var(--gold);border-color:var(--gold)}
+.kind-split{color:var(--coral);border-color:var(--coral)}
+.day-headline h2{
+  font-family:'Noto Serif KR',serif;
+  font-weight:500;
+  font-size:clamp(32px,3.8vw,48px);
+  color:var(--ink);
+  line-height:1.2;
+  letter-spacing:-.022em;
+  margin-bottom:16px;
+}
+.day-headline h2 em{
+  font-style:italic;
+  font-family:'Fraunces',serif;
+  color:var(--coral-deep);
+  font-weight:400;
+}
+.day-headline .lede{
+  font-family:'Noto Serif KR',serif;
+  font-size:17px;
+  color:var(--ink-soft);
+  line-height:1.75;
+  max-width:640px;
+  font-weight:400;
+}
+
+/* Timeline */
+.timeline{
+  position:relative;
+  padding-left:180px;
+  margin-top:20px;
+}
+.timeline::before{
+  content:'';
+  position:absolute;
+  top:4px;
+  bottom:4px;
+  left:160px;
+  width:1px;
+  background:var(--line);
+  background-image:linear-gradient(var(--line) 50%,transparent 50%);
+  background-size:1px 8px;
+}
+.tl-row{
+  position:relative;
+  padding:18px 0 18px 32px;
+  border-bottom:1px solid var(--line-soft);
+}
+.tl-row:last-child{border-bottom:none}
+.tl-time{
+  position:absolute;
+  left:-180px;
+  top:18px;
+  width:140px;
+  text-align:right;
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144;
+  font-size:15px;
+  color:var(--ink);
+  font-weight:500;
+  letter-spacing:-.005em;
+}
+.tl-time small{
+  display:block;
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:11px;
+  color:var(--ink-faint);
+  font-weight:400;
+  letter-spacing:.04em;
+  margin-top:2px;
+}
+.tl-row::before{
+  content:'';
+  position:absolute;
+  left:-27px;
+  top:27px;
+  width:11px;
+  height:11px;
+  border-radius:50%;
+  background:var(--paper);
+  border:2px solid var(--coral);
+  z-index:2;
+}
+.tl-row.pt-meal::before{background:var(--gold);border-color:var(--gold)}
+.tl-row.pt-rest::before{background:var(--teal);border-color:var(--teal)}
+.tl-row.pt-move::before{background:var(--paper);border-color:var(--ink-faint)}
+.tl-content{
+  font-size:14.5px;
+  color:var(--ink);
+  line-height:1.72;
+}
+.tl-content strong{
+  font-weight:600;
+  color:var(--coral-deep);
+  letter-spacing:-.005em;
+}
+.tl-content .jp{
+  color:var(--ink-soft);
+  font-family:'Shippori Mincho',serif;
+  font-size:13px;
+  letter-spacing:.02em;
+}
+.tl-content .detail{
+  display:block;
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-top:4px;
+  line-height:1.65;
+}
+
+/* Split day (activity / care) */
+.split-grid{
+  display:grid;
+  grid-template-columns:1.6fr .85fr;
+  gap:0;
+  margin-top:30px;
+  border:1px solid var(--line-soft);
+  background:var(--paper-soft);
+}
+.split-col{padding:42px 44px}
+.split-col.active-team{border-right:1px solid var(--line-soft)}
+.split-col.care-team{background:rgba(12,58,60,.04)}
+.split-col h3{
+  font-family:'Noto Serif KR',serif;
+  font-size:22px;
+  color:var(--ink);
+  margin-bottom:8px;
+  font-weight:600;
+  letter-spacing:-.015em;
+}
+.split-col h3 .tag{
+  display:inline-block;
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:10px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  padding:3px 9px;
+  margin-right:12px;
+  border-radius:2px;
+  vertical-align:middle;
+  font-weight:600;
+  position:relative;
+  top:-3px;
+}
+.split-col.active-team h3 .tag{background:var(--coral);color:var(--paper)}
+.split-col.care-team h3 .tag{background:var(--teal);color:var(--paper)}
+.split-col .dist{
+  font-family:'Fraunces',serif;
+  font-size:13px;
+  color:var(--ink-soft);
+  font-style:italic;
+  margin-bottom:28px;
+}
+.split-col .care-list{
+  margin-top:20px;
+  padding-left:0;
+  list-style:none;
+}
+.split-col .care-list li{
+  padding:12px 0 12px 22px;
+  border-bottom:1px dotted var(--line);
+  font-size:14.5px;
+  color:var(--ink-mid);
+  position:relative;
+}
+.split-col .care-list li::before{
+  content:'※';
+  position:absolute;
+  left:0;
+  color:var(--gold);
+  font-size:12px;
+  top:14px;
+}
+.split-col .care-list li:last-child{border-bottom:none}
+
+/* Plan B callout */
+.planb{
+  margin-top:40px;
+  padding:32px 36px 30px;
+  background:linear-gradient(180deg,rgba(192,69,46,.05),rgba(192,69,46,.02));
+  border-left:3px solid var(--coral);
+  border-right:1px solid var(--line-soft);
+  border-top:1px solid var(--line-soft);
+  border-bottom:1px solid var(--line-soft);
+  position:relative;
+}
+.planb-head{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:18px;
+}
+.planb-badge{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:28px;
+  color:var(--coral);
+  line-height:1;
+  font-weight:400;
+}
+.planb-label{
+  font-size:10.5px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--coral-deep);
+  font-weight:700;
+}
+.planb-case{
+  font-family:'Noto Serif KR',serif;
+  font-size:14.5px;
+  color:var(--ink-mid);
+  font-weight:500;
+  margin-left:auto;
+  font-style:italic;
+}
+.planb-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.planb-list li{
+  padding:8px 0 8px 24px;
+  position:relative;
+  font-size:14px;
+  color:var(--ink-mid);
+  line-height:1.7;
+  border-bottom:1px dotted var(--line-faint);
+}
+.planb-list li:last-child{border-bottom:none}
+.planb-list li::before{
+  content:'–';
+  position:absolute;
+  left:0;
+  color:var(--coral);
+  font-weight:500;
+}
+
+/* Footnotes */
+.day-notes{
+  margin-top:36px;
+  padding-top:26px;
+  border-top:1px solid var(--line-soft);
+}
+.day-note{
+  padding:8px 0;
+  font-family:'Noto Serif KR',serif;
+  font-size:13.5px;
+  color:var(--ink-soft);
+  line-height:1.75;
+  font-style:italic;
+  position:relative;
+  padding-left:24px;
+}
+.day-note::before{
+  content:'†';
+  position:absolute;
+  left:0;
+  color:var(--gold);
+  font-style:normal;
+  font-weight:700;
+}
+
+/* ========== TABLES (editorial style) ========== */
+.ed-table{
+  width:100%;
+  border-collapse:collapse;
+  margin:24px 0 8px;
+  font-size:14.5px;
+}
+.ed-table thead th{
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:10.5px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  font-weight:700;
+  padding:12px 14px 12px 0;
+  border-bottom:1.5px solid var(--ink);
+  text-align:left;
+  vertical-align:bottom;
+}
+.ed-table tbody td{
+  padding:16px 14px 16px 0;
+  border-bottom:1px dotted var(--line);
+  vertical-align:top;
+  color:var(--ink-mid);
+  line-height:1.65;
+}
+.ed-table tbody tr:last-child td{border-bottom:1px solid var(--ink)}
+.ed-table td strong{color:var(--ink);font-weight:600}
+.ed-table td.num-col{
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144;
+  color:var(--coral);
+  font-weight:500;
+  font-size:15px;
+  width:60px;
+}
+
+/* ========== SCHEDULE SUMMARY ========== */
+.section-schedule{
+  background:linear-gradient(180deg,transparent 0%,rgba(12,58,60,.035) 50%,transparent 100%);
+}
+.sched-wrap{
+  background:var(--paper);
+  border:1px solid var(--line);
+  overflow-x:auto;
+  box-shadow:var(--shadow-md);
+  position:relative;
+}
+.sched-wrap::before{
+  content:'※ Saraswati 기준';
+  position:absolute;
+  top:-28px;
+  right:0;
+  font-family:'Shippori Mincho',serif;
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--ink-soft);
+  text-transform:uppercase;
+  font-weight:500;
+}
+.sched-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14.5px;
+  min-width:860px;
+}
+.sched-table thead{background:var(--teal)}
+.sched-table thead th{
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:10.5px;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  font-weight:700;
+  padding:18px 20px;
+  text-align:left;
+  vertical-align:middle;
+  color:var(--paper);
+}
+.sched-table thead th:first-child{padding-left:38px}
+.sched-table thead th:last-child{padding-right:38px;text-align:right}
+.sched-table tbody tr{
+  border-bottom:1px dotted var(--line);
+  transition:background .25s ease;
+}
+.sched-table tbody tr:hover{background:var(--paper-soft)}
+.sched-table tbody tr:last-child{border-bottom:none}
+.sched-table tbody td{
+  padding:22px 20px;
+  vertical-align:top;
+  color:var(--ink-mid);
+  line-height:1.65;
+}
+.sched-table tbody td:first-child{padding-left:38px;padding-right:8px;width:90px}
+.sched-table tbody td:last-child{padding-right:38px}
+
+.sched-day{
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144,"SOFT" 100;
+  font-style:italic;
+  font-weight:300;
+  font-size:54px;
+  color:var(--coral);
+  line-height:.85;
+  letter-spacing:-.035em;
+  display:inline-block;
+}
+.sched-date{
+  font-family:'Noto Serif KR',serif;
+  font-size:15px;
+  font-weight:500;
+  color:var(--ink);
+  line-height:1.4;
+  width:140px;
+  letter-spacing:-.005em;
+  white-space:nowrap;
+}
+.sched-date small{
+  display:block;
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:11px;
+  color:var(--coral-deep);
+  font-weight:600;
+  margin-top:4px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.sched-kind{width:150px}
+.sched-badge{
+  display:inline-block;
+  font-size:10px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  font-weight:700;
+  padding:4px 9px;
+  border-radius:2px;
+  margin-bottom:8px;
+}
+.sched-badge.active{background:var(--coral);color:var(--paper)}
+.sched-badge.rest{background:var(--gold);color:var(--paper)}
+.sched-badge.transit{background:var(--teal);color:var(--paper)}
+.sched-kind-sub{
+  font-size:12px;
+  color:var(--ink-soft);
+  letter-spacing:.01em;
+  display:block;
+  font-weight:500;
+}
+.sched-activity{
+  font-size:14.5px;
+  color:var(--ink);
+  line-height:1.8;
+}
+.sched-activity strong{color:var(--ink);font-weight:600}
+.sched-activity em{font-style:italic;color:var(--coral-deep);font-weight:500;font-family:'Noto Serif KR',serif}
+.sched-activity .split-label{
+  display:inline-block;
+  font-size:9.5px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--coral);
+  font-weight:700;
+  margin-right:8px;
+  padding:2px 7px;
+  background:rgba(192,69,46,.1);
+  border-radius:2px;
+  vertical-align:2px;
+}
+.sched-activity .split-label.care{color:var(--teal);background:rgba(12,58,60,.08)}
+.sched-activity .sub{
+  display:block;
+  font-size:12.5px;
+  color:var(--ink-soft);
+  margin-top:6px;
+  font-style:italic;
+  font-family:'Noto Serif KR',serif;
+  line-height:1.6;
+}
+.sched-activity .stock{
+  font-size:10.5px;
+  color:var(--gold);
+  margin-left:4px;
+  letter-spacing:.1em;
+  font-weight:600;
+}
+
+.sched-move{
+  text-align:right;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11.5px;
+  color:var(--coral);
+  letter-spacing:-.02em;
+  white-space:nowrap;
+  width:100px;
+}
+.sched-move .km{
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144;
+  font-size:17px;
+  color:var(--ink);
+  font-weight:500;
+  display:block;
+  margin-bottom:3px;
+  letter-spacing:-.01em;
+}
+
+/* Responsive: stack as cards */
+@media (max-width:900px){
+  .sched-wrap{background:transparent;border:none;box-shadow:none;overflow:visible}
+  .sched-wrap::before{display:none}
+  .sched-table,.sched-table thead,.sched-table tbody,.sched-table tr,.sched-table td{display:block}
+  .sched-table{min-width:0;font-size:14px}
+  .sched-table thead{display:none}
+  .sched-table tbody tr{
+    background:var(--paper);
+    border:1px solid var(--line-soft);
+    margin-bottom:16px;
+    padding:22px 22px 18px;
+    position:relative;
+  }
+  .sched-table tbody td{
+    padding:4px 0 !important;
+    width:auto !important;
+    min-width:0 !important;
+  }
+  .sched-table tbody td:first-child{
+    position:absolute;
+    top:16px;
+    right:22px;
+    padding:0 !important;
+  }
+  .sched-day{font-size:46px}
+  .sched-date{width:auto;padding-right:70px !important}
+  .sched-kind{width:auto;margin-bottom:4px}
+  .sched-move{
+    text-align:left;
+    width:auto;
+    margin-top:10px;
+    padding-top:10px !important;
+    border-top:1px dotted var(--line-soft);
+  }
+  .sched-move .km{display:inline-block;margin-right:14px;margin-bottom:0;font-size:15px}
+}
+
+/* ========== MAP SECTION ========== */
+.section-map{
+  background:linear-gradient(180deg,transparent 0%,rgba(12,58,60,.045) 50%,transparent 100%);
+}
+.map-frame{
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:56px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  padding:56px 48px 48px;
+  box-shadow:var(--shadow-md);
+  position:relative;
+}
+.map-frame::before{
+  content:'地図';
+  position:absolute;
+  top:22px;
+  left:32px;
+  font-family:'Shippori Mincho',serif;
+  font-size:12px;
+  letter-spacing:.36em;
+  color:var(--coral);
+  font-weight:500;
+}
+.map-frame::after{
+  content:'map · okinawa main island';
+  position:absolute;
+  top:22px;
+  right:32px;
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:11px;
+  letter-spacing:.08em;
+  color:var(--ink-soft);
+}
+.map-holder{position:relative;min-height:520px}
+.map-svg{width:100%;height:auto;display:block}
+.map-svg .island{
+  fill:var(--bg-deep);
+  stroke:var(--teal);
+  stroke-width:1.1;
+  stroke-linejoin:round;
+}
+.map-svg .sea-deco{
+  stroke:var(--teal);
+  stroke-width:.35;
+  fill:none;
+  opacity:.14;
+}
+.map-svg .pin{
+  fill:var(--coral);
+  stroke:var(--paper);
+  stroke-width:1.2;
+  transition:r .35s ease,fill .35s ease;
+}
+.map-svg .pin-label{
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:9.5px;
+  fill:var(--ink);
+  font-weight:500;
+  letter-spacing:-.005em;
+  opacity:0;
+  transition:opacity .35s ease;
+  pointer-events:none;
+  paint-order:stroke;
+  stroke:var(--paper);
+  stroke-width:3;
+  stroke-linejoin:round;
+}
+.map-svg .pin-grp .pin{r:2.8}
+.map-svg .pin-grp.active .pin{r:5;fill:var(--coral-deep)}
+.map-svg .pin-grp.active .pin-label{opacity:1;font-weight:600}
+.map-svg .route{
+  stroke:var(--coral);
+  stroke-width:1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray:5 4;
+  opacity:.18;
+  fill:none;
+  transition:opacity .45s ease,stroke-width .45s ease,stroke-dasharray .45s ease;
+}
+.map-svg .route.active{
+  opacity:1;
+  stroke-width:2.4;
+  stroke-dasharray:0;
+  stroke:var(--coral-deep);
+}
+.map-svg .routes.has-active .route:not(.active){opacity:.06}
+.map-svg .base-marker .pulse{
+  fill:var(--coral);
+  opacity:.4;
+  animation:mapPulse 2.6s ease-out infinite;
+}
+@keyframes mapPulse{
+  0%{r:6;opacity:.5}
+  100%{r:26;opacity:0}
+}
+.map-svg .pin-base{
+  fill:var(--coral);
+  stroke:var(--paper);
+  stroke-width:2.5;
+}
+.map-svg .base-label{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:16px;
+  fill:var(--coral-deep);
+  font-weight:500;
+  letter-spacing:-.01em;
+  paint-order:stroke;
+  stroke:var(--paper);
+  stroke-width:4;
+  stroke-linejoin:round;
+}
+.map-svg .base-sublabel{
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:10px;
+  fill:var(--ink-soft);
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  paint-order:stroke;
+  stroke:var(--paper);
+  stroke-width:3;
+}
+.map-svg .compass-ring{fill:none;stroke:var(--line);stroke-width:.8}
+.map-svg .compass-n{
+  fill:var(--coral);
+}
+.map-svg .compass-s{
+  fill:none;
+  stroke:var(--ink-mid);
+  stroke-width:.6;
+}
+.map-svg .compass-label{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:12px;
+  fill:var(--teal);
+  font-weight:500;
+}
+.map-svg .scale-bar{stroke:var(--ink);stroke-width:1.2}
+.map-svg .scale-label{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:10px;
+  fill:var(--ink-soft);
+}
+.map-svg .region-label{
+  font-family:'Shippori Mincho',serif;
+  font-size:11px;
+  letter-spacing:.35em;
+  fill:var(--teal);
+  opacity:.45;
+  font-weight:400;
+}
+
+/* Legend */
+.map-legend{display:flex;flex-direction:column;gap:0}
+.legend-head{
+  margin-bottom:20px;
+  padding-bottom:18px;
+  border-bottom:1px solid var(--line);
+}
+.legend-kanji{
+  font-family:'Shippori Mincho',serif;
+  font-size:11px;
+  letter-spacing:.3em;
+  color:var(--gold);
+  display:block;
+  margin-bottom:8px;
+  font-weight:500;
+}
+.legend-head h3{
+  font-family:'Noto Serif KR',serif;
+  font-size:22px;
+  font-weight:600;
+  color:var(--ink);
+  letter-spacing:-.02em;
+  margin-bottom:8px;
+}
+.legend-head p{
+  font-size:12.5px;
+  color:var(--ink-soft);
+  font-style:italic;
+  font-family:'Noto Serif KR',serif;
+}
+.legend-days{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  flex:1;
+}
+.legend-day{
+  padding:12px 14px 11px;
+  border:1px solid var(--line-soft);
+  background:var(--paper-soft);
+  cursor:pointer;
+  transition:background .2s ease,border-color .2s ease,transform .15s ease;
+  text-align:left;
+  font-family:inherit;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  position:relative;
+  border-radius:0;
+}
+.legend-day:hover,.legend-day.active{
+  background:rgba(192,69,46,.08);
+  border-color:var(--coral);
+}
+.legend-day.active{transform:translateY(-1px);box-shadow:0 2px 8px -2px rgba(192,69,46,.25)}
+.legend-day:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+.legend-day-num{
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144,"SOFT" 100;
+  font-style:italic;
+  font-size:22px;
+  color:var(--coral);
+  font-weight:400;
+  line-height:1;
+  letter-spacing:-.02em;
+}
+.legend-day-title{
+  font-size:11.5px;
+  color:var(--ink-mid);
+  line-height:1.45;
+  font-weight:500;
+  letter-spacing:-.005em;
+}
+.legend-day-dist{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  color:var(--ink-soft);
+  letter-spacing:-.01em;
+  margin-top:2px;
+}
+.legend-day.active .legend-day-title{color:var(--ink)}
+.legend-day.active .legend-day-dist{color:var(--coral-deep)}
+.legend-foot{
+  margin-top:22px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.legend-marker{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:12px;
+  color:var(--ink-mid);
+}
+.swatch{
+  width:22px;height:22px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  position:relative;
+}
+.swatch-base::after{
+  content:'';
+  width:10px;height:10px;
+  background:var(--coral);
+  border:2px solid var(--paper);
+  border-radius:50%;
+  box-shadow:0 0 0 1.5px var(--coral);
+}
+.swatch-pin::after{
+  content:'';
+  width:6px;height:6px;
+  background:var(--coral);
+  border-radius:50%;
+  border:1px solid var(--paper);
+}
+.swatch-route{position:relative}
+.swatch-route::after{
+  content:'';
+  position:absolute;
+  left:0;right:0;top:50%;
+  border-top:1.8px dashed var(--coral);
+}
+
+@media (max-width:900px){
+  .map-frame{
+    grid-template-columns:1fr;
+    padding:40px 22px 26px;
+    gap:28px;
+  }
+  .map-frame::before,.map-frame::after{left:22px;top:14px}
+  .map-frame::after{right:22px;left:auto}
+  .map-holder{order:2;min-height:auto}
+  .map-legend{order:1}
+  .legend-days{grid-template-columns:1fr 1fr}
+}
+
+/* ========== FOOD, DISTANCE, TIPS SECTIONS ========== */
+.food-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:56px;
+}
+@media (max-width:800px){.food-grid{grid-template-columns:1fr}}
+
+.hero-table-head{
+  font-family:'Noto Serif KR',serif;
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:8px;
+  color:var(--ink);
+  letter-spacing:-.015em;
+}
+.hero-table-head .jp{
+  display:block;
+  font-family:'Shippori Mincho',serif;
+  font-size:11px;
+  letter-spacing:.3em;
+  color:var(--coral);
+  margin-top:4px;
+  font-weight:500;
+}
+.hero-table-lede{
+  font-size:14px;
+  color:var(--ink-soft);
+  margin-bottom:20px;
+  font-style:italic;
+  font-family:'Noto Serif KR',serif;
+}
+
+.dist-wrap{
+  background:var(--paper);
+  padding:48px 52px;
+  border:1px solid var(--line-soft);
+  position:relative;
+}
+.dist-wrap::before{
+  content:'Saraswati ⟶';
+  position:absolute;
+  top:16px;
+  right:22px;
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:13px;
+  color:var(--gold);
+  letter-spacing:.02em;
+}
+.dist-group{margin-bottom:40px}
+.dist-group:last-child{margin-bottom:0}
+.dist-group h4{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-weight:400;
+  font-size:20px;
+  color:var(--coral);
+  margin-bottom:16px;
+  padding-bottom:10px;
+  border-bottom:1px dotted var(--line);
+}
+.dist-group h4 small{
+  font-family:'IBM Plex Sans KR',sans-serif;
+  font-style:normal;
+  font-size:11px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  margin-left:14px;
+  font-weight:600;
+}
+.dist-row{
+  display:grid;
+  grid-template-columns:1fr auto auto;
+  gap:16px;
+  padding:10px 0;
+  align-items:baseline;
+  border-bottom:1px dotted var(--line-faint);
+}
+.dist-row:last-child{border-bottom:none}
+.dist-row .pl{font-size:15px;color:var(--ink)}
+.dist-row .km{
+  font-family:'Fraunces',serif;
+  font-size:14px;
+  color:var(--ink-mid);
+  min-width:70px;
+  text-align:right;
+}
+.dist-row .min{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  color:var(--coral);
+  min-width:70px;
+  text-align:right;
+  letter-spacing:-.02em;
+}
+
+/* Tips section */
+.tips-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:40px 60px;
+}
+@media (max-width:800px){.tips-grid{grid-template-columns:1fr}}
+.tip-card h4{
+  font-family:'Noto Serif KR',serif;
+  font-size:19px;
+  font-weight:600;
+  color:var(--ink);
+  margin-bottom:4px;
+  letter-spacing:-.015em;
+}
+.tip-card .jp{
+  font-family:'Shippori Mincho',serif;
+  font-size:10.5px;
+  letter-spacing:.3em;
+  color:var(--coral);
+  margin-bottom:18px;
+  display:block;
+  font-weight:500;
+}
+.tip-list{list-style:none;padding:0;margin:0}
+.tip-list li{
+  padding:12px 0;
+  border-bottom:1px dotted var(--line);
+  font-size:14.5px;
+  color:var(--ink-mid);
+  line-height:1.7;
+  display:grid;
+  grid-template-columns:130px 1fr;
+  gap:20px;
+  align-items:baseline;
+}
+.tip-list li:last-child{border-bottom:none}
+.tip-list li .k{
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  font-weight:600;
+}
+.tip-list li .v strong{color:var(--ink);font-weight:600}
+
+/* ========== FOOTER ========== */
+footer{
+  padding:80px 0 60px;
+  border-top:1px solid var(--line);
+  margin-top:60px;
+}
+.foot-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:60px;
+  align-items:end;
+}
+.foot-mark{
+  font-family:'Fraunces',serif;
+  font-variation-settings:"opsz" 144,"SOFT" 50;
+  font-style:italic;
+  font-weight:300;
+  font-size:56px;
+  color:var(--coral);
+  line-height:.9;
+  letter-spacing:-.03em;
+}
+.foot-mark small{
+  display:block;
+  font-style:normal;
+  font-family:'Shippori Mincho',serif;
+  font-size:14px;
+  color:var(--ink-soft);
+  letter-spacing:.3em;
+  margin-top:10px;
+  font-weight:500;
+}
+.foot-item{
+  font-size:13px;
+  color:var(--ink-mid);
+  line-height:1.7;
+}
+.foot-item h5{
+  font-size:10px;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width:900px){
+  .wrap,.wrap-narrow{padding:0 24px}
+  .section{padding:70px 0}
+  .section-head{grid-template-columns:1fr;gap:24px}
+  .hero{padding:36px 0 60px}
+  .hero-body{margin-top:50px}
+  .hero-meta{grid-template-columns:1fr 1fr;gap:0}
+  .hero-meta-cell{border:none;padding:16px 0;border-bottom:1px dotted var(--line)}
+  .hero-meta-cell:nth-child(odd){padding-right:16px}
+  .hero-meta-cell:nth-child(even){padding-left:16px;border-left:1px dotted var(--line)}
+  .day-head{grid-template-columns:1fr;gap:20px}
+  .day-tag .num{font-size:68px}
+  .timeline{padding-left:0}
+  .timeline::before{left:4px}
+  .tl-row{padding:16px 0 16px 24px}
+  .tl-time{
+    position:static;
+    text-align:left;
+    width:auto;
+    margin-bottom:6px;
+    font-size:13px;
+  }
+  .tl-row::before{left:0;top:8px}
+  .split-grid{grid-template-columns:1fr}
+  .split-col.active-team{border-right:none;border-bottom:1px solid var(--line-soft)}
+  .split-col{padding:32px 28px}
+  .over-card-1,.over-card-2,.over-card-3,.over-card-4{grid-column:span 12}
+  .group-grid{grid-template-columns:1fr}
+  .group-col:first-child{border-right:none;border-bottom:1px solid var(--line-soft)}
+  .foot-grid{grid-template-columns:1fr;gap:30px}
+  .foot-mark{font-size:40px}
+  .tip-list li{grid-template-columns:1fr;gap:4px}
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.reveal{animation:fadeUp .8s ease forwards;opacity:0}
+.reveal-1{animation-delay:.1s}
+.reveal-2{animation-delay:.22s}
+.reveal-3{animation-delay:.34s}
+.reveal-4{animation-delay:.46s}
+.reveal-5{animation-delay:.58s}
+.reveal-6{animation-delay:.7s}
+
+/* ========== SELECTION ========== */
+::selection{background:var(--coral);color:var(--paper)}
+
+/* ========== PRINT ========== */
+@media print{
+  body{background:#fff;color:#000}
+  body::before{display:none}
+  .daynav{display:none}
+  .hero{min-height:auto;padding:40px 0}
+  .section{padding:40px 0;page-break-inside:avoid}
+  .day{page-break-before:always;padding:30px 0}
+  .planb{break-inside:avoid}
+  .hero-kanji{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HERO ========== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <span class="mark"><span class="mark-dot"></span>OKINAWA · ITINERARY 2026 · PLAN 2</span>
+      <span>№ 02 / 沖縄 · 9N 10D · 再構成</span>
+    </div>
+
+    <div class="hero-body">
+      <div class="hero-eyebrow reveal reveal-1">나키진 베이스 · 가족 자유여행 · 재구성판</div>
+      <h1 class="hero-title reveal reveal-2">
+        Okinawa<span class="it">,</span><br />
+        refined in ten days
+      </h1>
+      <p class="hero-sub reveal reveal-3">
+        Plan1을 동선·효율·밀도 기준으로 다듬었다. <strong>Day 4에 츄라우미·てつこのそば·비세·에메랄드를 번들</strong>로 묶고,
+        <strong>GW 본 피크(5/3)는 나키진성 + 숙소 휴식</strong>으로 경량화. 해수욕 기회를 4회로 늘렸다.
+      </p>
+
+      <div class="hero-meta reveal reveal-4">
+        <div class="hero-meta-cell">
+          <div class="hero-meta-label">Dates</div>
+          <div class="hero-meta-value">4·28 — 5·7<small>2026 · 화요일 출발</small></div>
+        </div>
+        <div class="hero-meta-cell">
+          <div class="hero-meta-label">Base</div>
+          <div class="hero-meta-value">Saraswati<small>나키진촌 · 北部</small></div>
+        </div>
+        <div class="hero-meta-cell">
+          <div class="hero-meta-label">Party</div>
+          <div class="hero-meta-value">6<small>60대 2 · 30대 3 · 아기 1</small></div>
+        </div>
+        <div class="hero-meta-cell">
+          <div class="hero-meta-label">Transport</div>
+          <div class="hero-meta-value">Rental · 1<small>렌터카 · 고속도로 이용</small></div>
+        </div>
+      </div>
+    </div>
+
+    <span class="hero-kanji hero-kanji-1 serif-ja">沖</span>
+    <span class="hero-kanji hero-kanji-2 serif-ja">縄</span>
+  </div>
+</header>
+
+<!-- ========== DAY NAV ========== -->
+<nav class="daynav" id="daynav">
+  <div class="wrap">
+    <div class="daynav-row">
+      <span class="daynav-label">Days</span>
+      <a href="#day-1"><span class="d-num">01</span><span class="d-tag">도착</span></a>
+      <a href="#day-2"><span class="d-num">02</span><span class="d-tag">활동</span></a>
+      <a href="#day-3"><span class="d-num">03</span><span class="d-tag">휴식</span></a>
+      <a href="#day-4"><span class="d-num">04</span><span class="d-tag">활동</span></a>
+      <a href="#day-5"><span class="d-num">05</span><span class="d-tag">휴식</span></a>
+      <a href="#day-6"><span class="d-num">06</span><span class="d-tag">활동</span></a>
+      <a href="#day-7"><span class="d-num">07</span><span class="d-tag">휴식</span></a>
+      <a href="#day-8"><span class="d-num">08</span><span class="d-tag">활동</span></a>
+      <a href="#day-9"><span class="d-num">09</span><span class="d-tag">휴식</span></a>
+      <a href="#day-10"><span class="d-num">10</span><span class="d-tag">출발</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== OVERVIEW ========== -->
+<section class="section" id="overview">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-num">00</div>
+      <div>
+        <div class="section-head-kicker">Overview · 概要 · Plan 2</div>
+        <h2 class="section-head-title">여행의 얼개 <small style="font-size:14px;color:var(--coral-deep);letter-spacing:0;font-weight:400">— 재구성판</small></h2>
+        <p class="section-head-lead">
+          숙소는 나키진에 하나, 차량은 한 대. 아기는 이틀에 한 번 숙소에서 온전히 쉬도록
+          <strong>짝수 Day는 활동일, 홀수 Day는 휴식일</strong>로 나누었고, 휴식일에는 장거리를
+          다녀오는 <em>활동조</em>와 숙소를 지키는 <em>돌봄조</em>로 역할이 갈린다.
+          Plan2에서는 <strong>Day 4 번들화</strong>와 <strong>Day 6 경량화</strong>로 밀도와 휴식의 균형을 다시 맞췄다.
+        </p>
+      </div>
+    </div>
+
+    <div class="over-grid">
+      <div class="over-card over-card-1">
+        <h3>기본 정보<span class="jp">きほん</span></h3>
+        <div class="info-rows">
+          <div class="info-row">
+            <span class="k">Period</span>
+            <span class="v">4월 28일 — 5월 7일<small>9박 10일 · 골든위크 포함</small></span>
+          </div>
+          <div class="info-row">
+            <span class="k">Lodging</span>
+            <span class="v">Saraswati<small>나키진촌 · 오키나와 北部</small></span>
+          </div>
+          <div class="info-row">
+            <span class="k">Transport</span>
+            <span class="v">렌터카 1대<small>공항 수령 / 반납</small></span>
+          </div>
+          <div class="info-row">
+            <span class="k">Party</span>
+            <span class="v">총 6명<small>60대 2, 30대 3, 25개월 아기 1</small></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="over-card over-card-2">
+        <h3>조 편성 · 휴식 리듬<span class="jp">2 チーム制</span></h3>
+        <div class="group-grid">
+          <div class="group-col active">
+            <span class="tag">Active</span>
+            <h4>활동조</h4>
+            <p>차량으로 외출. 근거리는 전원 합류 가능, 휴식일에는 장거리 관광.</p>
+          </div>
+          <div class="group-col care">
+            <span class="tag">Care</span>
+            <h4>돌봄조</h4>
+            <p>아기와 숙소·근처. 발코니·산책·낮잠 중심의 느린 시간.</p>
+          </div>
+        </div>
+        <div class="group-note">
+          아기는 이틀에 한 번 쉬도록 한다. 짝수 Day는 전원 활동일, 홀수 Day는 휴식일 — Day 1과 10은 이동일로 예외.
+          <br/><strong>Plan2 재구성</strong>: Day 4에 번들(츄라우미+てつこ+후쿠기+에메랄드), Day 6 경량(나키진성+숙소 휴식), 수영 4회.
+        </div>
+      </div>
+
+      <div class="over-card over-card-3">
+        <h3>식료품 보급<span class="jp">食材調達</span></h3>
+        <table class="ed-table" style="margin:0">
+          <thead>
+            <tr><th style="width:50px">회차</th><th style="width:110px">날짜</th><th>장소</th><th style="width:140px">비고</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="num-col">1</td><td>Day 1 · 4·28</td><td>카네히데 나키진 사쿠라마켓</td><td>도착 직후</td></tr>
+            <tr><td class="num-col">2</td><td>Day 5 · 5·2</td><td>이온 차탄점 / 산에이</td><td>중부 외출길</td></tr>
+            <tr><td class="num-col">3</td><td>Day 8 · 5·5</td><td>카네히데 나고 / 빅원 나고</td><td>나고 외출길</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="over-card over-card-4">
+        <h3>쇼핑 포인트<span class="jp">ショッピング</span></h3>
+        <table class="ed-table" style="margin:0">
+          <thead>
+            <tr><th>매장</th><th style="width:90px">위치</th><th style="width:90px">추천일</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>니시마츠야</strong> 나고오미나미점</td><td>나고</td><td>Day 8</td></tr>
+            <tr><td>이온 차탄점</td><td>차탄</td><td>Day 5</td></tr>
+            <tr><td>아메리칸빌리지 · 데포아일랜드</td><td>차탄</td><td>Day 5</td></tr>
+            <tr><td>코쿠사이도리 · 쓰보야 야치문</td><td>나하</td><td>Day 3</td></tr>
+            <tr><td>세소코비치 · 코우리 하트록</td><td>모토부 · 나키진</td><td>Day 2·8</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SCHEDULE SUMMARY ========== -->
+<section class="section section-schedule" id="schedule">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-num">01</div>
+      <div>
+        <div class="section-head-kicker">At a Glance · 日程 · Plan 2</div>
+        <h2 class="section-head-title">열흘을 한 장에</h2>
+        <p class="section-head-lead">
+          각 Day의 성격과 핵심 일정을 추려 한 장으로. <strong>Day 4 ★</strong>는 Plan2 재구성의 핵심 번들,
+          <strong>Day 6 ★</strong>는 GW 본 피크 경량 대응. 세부는 아래 Day별 섹션에서.
+          <strong style="color:var(--coral-deep)">Active</strong>는 활동조,
+          <strong style="color:var(--teal)">Care</strong>는 돌봄조.
+        </p>
+      </div>
+    </div>
+
+    <div class="sched-wrap">
+      <table class="sched-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>날짜</th>
+            <th>구분</th>
+            <th>주요 일정</th>
+            <th>이동</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="sched-day">01</span></td>
+            <td class="sched-date">4·28 화<small>도착일</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge transit">도착</span>
+              <span class="sched-kind-sub">전원 · 가벼운 일정</span>
+            </td>
+            <td class="sched-activity">
+              <strong>ICN 11:20 → OKA 14:00</strong> · 렌터카 → 카네히데 나키진<span class="stock">※ 식료품 #1</span> → 숙소 체크인 → 숙소 저녁
+              <span class="sub">점심은 기내식, 저녁은 자취 / 여력 시 만자모 일몰(+)</span>
+            </td>
+            <td class="sched-move"><span class="km">90 km</span>1h 30m</td>
+          </tr>
+          <tr>
+            <td><span class="sched-day">02</span></td>
+            <td class="sched-date">4·29 수<small>쇼와의 날</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge active">활동일</span>
+              <span class="sched-kind-sub">전원 · 근거리 · 수영</span>
+            </td>
+            <td class="sched-activity">
+              <strong>코우리섬</strong> · 코우리대교 · 오션타워 · <strong>하트록</strong> · 점심 <em>しらさ食堂</em> · 코우리비치 수영 · 와루미대교
+              <span class="sub">SNS 명소 하트록 + 본격 수영 추가</span>
+            </td>
+            <td class="sched-move"><span class="km">40 km</span>근거리</td>
+          </tr>
+          <tr>
+            <td><span class="sched-day">03</span></td>
+            <td class="sched-date">4·30 목<small>평일</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge rest">휴식일</span>
+              <span class="sched-kind-sub">조 분리 · 원거리</span>
+            </td>
+            <td class="sched-activity">
+              <span class="split-label">Active</span>슈리성 · 킨조초 · <em>海鮮食堂 太陽</em> · 쓰보야 · 코쿠사이도리 · 나미노우에 · 사카에마치 <strong>(6곳 간소화)</strong><br/>
+              <span class="split-label care">Care</span>숙소 · 발코니 · 주택가 산책
+            </td>
+            <td class="sched-move"><span class="km">200 km</span>왕복 3h</td>
+          </tr>
+          <tr class="sched-highlight">
+            <td><span class="sched-day">04</span></td>
+            <td class="sched-date">5·1 금<small>평일</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge active">활동일 ★</span>
+              <span class="sched-kind-sub">전원 · 근거리 번들 · 수영</span>
+            </td>
+            <td class="sched-activity">
+              <strong>츄라우미</strong> 08:30 개장 → <em>てつこのそば</em> 점심 → <strong>비세 후쿠기</strong> → <strong>에메랄드비치 수영</strong>
+              <span class="sub">반경 2km 안에 핵심 4곳 번들 · Plan2 재구성 핵심</span>
+            </td>
+            <td class="sched-move"><span class="km">25 km</span>근거리</td>
+          </tr>
+          <tr>
+            <td><span class="sched-day">05</span></td>
+            <td class="sched-date">5·2 토<small>주말</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge rest">휴식일</span>
+              <span class="sched-kind-sub">조 분리 · 중거리</span>
+            </td>
+            <td class="sched-activity">
+              <span class="split-label">Active</span>만자모 · 자키미성 · 잔파곶 · 야치문 · <strong>아메리칸빌리지</strong> [+부세나 옵션]<span class="stock">※ 식료품 #2</span><br/>
+              <span class="split-label care">Care</span>숙소 · 아기 놀이 · 산책
+            </td>
+            <td class="sched-move"><span class="km">120~140 km</span>해안 루프</td>
+          </tr>
+          <tr>
+            <td><span class="sched-day">06</span></td>
+            <td class="sched-date">5·3 일<small>헌법기념일</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge active">활동일</span>
+              <span class="sched-kind-sub">전원 · 근거리</span>
+            </td>
+            <td class="sched-activity">
+              <strong>나키진성터</strong> (세계유산) · 점심 <em>岸本食堂</em> · <strong>오후 숙소 휴식</strong> · 저녁 해안 산책
+              <span class="sub">GW 본 피크 — 의도적 경량화 · 오후 숙소 회복</span>
+            </td>
+            <td class="sched-move"><span class="km">10 km</span>극근거리</td>
+          </tr>
+          <tr>
+            <td><span class="sched-day">07</span></td>
+            <td class="sched-date">5·4 월<small>녹의 날</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge rest">휴식일</span>
+              <span class="sched-kind-sub">조 분리 · 중거리</span>
+            </td>
+            <td class="sched-activity">
+              <span class="split-label">Active</span>유이유이 · 가야우치반타 · <strong>다이세키린잔</strong> · 헤도곶 · 오쿠마비치 · <strong>히지폭포 트레킹</strong><br/>
+              <span class="split-label care">Care</span>숙소 · 아기와 운탄잔 비치 산책
+            </td>
+            <td class="sched-move"><span class="km">120 km</span>국도 58</td>
+          </tr>
+          <tr>
+            <td><span class="sched-day">08</span></td>
+            <td class="sched-date">5·5 화<small>어린이날</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge active">활동일</span>
+              <span class="sched-kind-sub">전원 · 근거리</span>
+            </td>
+            <td class="sched-activity">
+              <strong>오리온 해피파크</strong>(실내) · 나고 소바 · 나고 쇼핑<span class="stock">※ 식료품 #3 · 니시마츠야</span> · <strong>세소코비치 수영</strong>
+              <span class="sub">실내 중심 오전 + 오후 세소코 수영</span>
+            </td>
+            <td class="sched-move"><span class="km">45 km</span>근거리</td>
+          </tr>
+          <tr>
+            <td><span class="sched-day">09</span></td>
+            <td class="sched-date">5·6 수<small>대체공휴일</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge rest">휴식일</span>
+              <span class="sched-kind-sub">조 분리 · 근거리</span>
+            </td>
+            <td class="sched-activity">
+              <span class="split-label">Active</span><strong>네오파크</strong> · 파인애플파크 · 후르츠랜드 · 세소코섬 · 모토부 마을<br/>
+              <span class="split-label care">Care</span>숙소 · 짐 정리
+            </td>
+            <td class="sched-move"><span class="km">70 km</span>근거리</td>
+          </tr>
+          <tr>
+            <td><span class="sched-day">10</span></td>
+            <td class="sched-date">5·7 목<small>출발일</small></td>
+            <td class="sched-kind">
+              <span class="sched-badge transit">출발</span>
+              <span class="sched-kind-sub">전원</span>
+            </td>
+            <td class="sched-activity">
+              06:30 체크아웃 → 07:00 출발 → 08:30 렌터카 반납 → 09:00 공항 → 09:20 체크인 → <strong>OKA 11:20 출발</strong>
+            </td>
+            <td class="sched-move"><span class="km">90 km</span>1h 30m</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MAP SECTION ========== -->
+<section class="section section-map" id="map">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-num">02</div>
+      <div>
+        <div class="section-head-kicker">Map · 地図</div>
+        <h2 class="section-head-title">나키진에서 뻗어나가는<br/>열흘의 궤적</h2>
+        <p class="section-head-lead">
+          숙소 <strong style="color:var(--coral-deep)">Saraswati</strong>를 중심에 두고 각 Day의 이동 동선을 지도 위에 그렸다.
+          오른쪽의 Day 패널에 마우스를 올리면 해당 일정의 경로와 핵심 지점이 선명해진다.
+        </p>
+      </div>
+    </div>
+
+    <div class="map-frame">
+      <div class="map-holder">
+        <svg viewBox="0 0 500 900" class="map-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="오키나와 본섬 여행 동선 지도">
+
+          <!-- Sea decoration -->
+          <g class="sea-deco">
+            <path d="M 30 80 Q 60 75 90 80 T 150 80"/>
+            <path d="M 30 110 Q 60 105 90 110 T 150 110"/>
+            <path d="M 380 420 Q 410 415 440 420 T 480 420"/>
+            <path d="M 380 450 Q 410 445 440 450 T 480 450"/>
+            <path d="M 30 780 Q 60 775 90 780 T 150 780"/>
+            <path d="M 30 810 Q 60 805 90 810 T 150 810"/>
+          </g>
+
+          <!-- Region labels (kanji) -->
+          <text class="region-label" x="390" y="125" text-anchor="middle">北</text>
+          <text class="region-label" x="30" y="500" text-anchor="middle">西</text>
+          <text class="region-label" x="470" y="500" text-anchor="middle">東</text>
+          <text class="region-label" x="390" y="830" text-anchor="middle">南</text>
+
+          <!-- Main Okinawa Island -->
+          <path class="island" d="
+            M 358 72
+            C 380 86, 398 120, 408 172
+            C 418 230, 432 298, 448 368
+            C 462 424, 486 472, 508 524
+            C 524 566, 542 614, 538 660
+            C 520 694, 486 716, 452 732
+            C 418 746, 384 760, 350 766
+            C 316 772, 282 770, 252 742
+            C 228 716, 218 684, 218 650
+            C 218 620, 218 598, 218 580
+            L 216 570
+            L 160 580
+            L 213 558
+            C 206 528, 182 492, 178 466
+            C 196 442, 216 422, 224 404
+            C 222 394, 220 384, 222 370
+            L 216 360
+            C 206 356, 190 360, 184 370
+            L 128 388
+            L 72 348
+            L 122 318
+            L 184 308
+            C 214 294, 240 274, 254 244
+            C 274 200, 304 134, 358 72
+            Z
+          "/>
+
+          <!-- Kouri Island -->
+          <ellipse class="island" cx="265" cy="312" rx="10" ry="8"/>
+          <!-- Sesoko Island -->
+          <ellipse class="island" cx="88" cy="396" rx="18" ry="11"/>
+          <!-- Ie Island (decorative) -->
+          <ellipse class="island" cx="75" cy="285" rx="16" ry="7" opacity=".75"/>
+
+          <!-- Routes -->
+          <g class="routes" id="routes">
+            <path class="route r-day1" d="M 238 770 C 240 620 252 500 252 398 C 240 375 224 360 218 348"/>
+            <path class="route r-day1 r-day1-alt" d="M 238 770 C 228 680 214 580 208 442 C 214 420 220 400 218 348" stroke-dasharray="4 4" opacity="0.55"/>
+            <path class="route r-day2" d="M 218 348 C 238 328 254 320 265 312"/>
+            <path class="route r-day3" d="M 218 348 C 222 500 244 660 268 736 C 260 744 248 758 238 770"/>
+            <path class="route r-day4" d="M 218 348 C 180 344 140 342 112 340"/>
+            <path class="route r-day5" d="M 218 348 C 212 395 208 420 208 442 C 216 480 220 505 222 528 C 200 542 182 552 172 558 C 200 552 214 548 222 548 C 226 570 230 584 232 598 C 228 480 222 420 218 348"/>
+            <path class="route r-day6" d="M 218 348 C 226 346 236 346 242 348 L 218 348"/>
+            <path class="route r-day7" d="M 218 348 C 280 280 340 220 388 182 C 384 162 380 146 378 138 C 372 124 368 118 368 112 C 362 96 360 82 358 72 C 368 130 378 180 380 192 C 310 255 250 315 218 348"/>
+            <path class="route r-day8" d="M 218 348 C 236 372 250 388 258 408 C 200 404 140 400 88 396"/>
+            <path class="route r-day9" d="M 218 348 C 234 368 246 382 252 392 C 180 394 118 396 88 396 C 110 388 128 382 142 378 C 178 362 204 352 218 348"/>
+            <path class="route r-day10" d="M 218 348 C 228 520 234 670 238 770"/>
+          </g>
+
+          <!-- Pin groups (interactive per Day) -->
+          <g class="pins">
+            <g class="pin-grp" data-day="1">
+              <circle class="pin" cx="238" cy="770"/>
+              <text class="pin-label" x="244" y="773" text-anchor="start">나하공항</text>
+              <circle class="pin" cx="232" cy="356"/>
+              <text class="pin-label" x="238" y="360" text-anchor="start">카네히데 나키진</text>
+              <circle class="pin" cx="208" cy="442" opacity="0.55"/>
+              <text class="pin-label" x="214" y="444" text-anchor="start" opacity="0.7">만자모(+선택)</text>
+            </g>
+            <g class="pin-grp" data-day="2">
+              <circle class="pin" cx="265" cy="312"/>
+              <text class="pin-label" x="280" y="312" text-anchor="start">코우리섬</text>
+            </g>
+            <g class="pin-grp" data-day="3">
+              <circle class="pin" cx="268" cy="736"/>
+              <text class="pin-label" x="274" y="732" text-anchor="start">슈리성</text>
+              <circle class="pin" cx="252" cy="720"/>
+              <text class="pin-label" x="248" y="712" text-anchor="end">太陽</text>
+              <circle class="pin" cx="276" cy="742"/>
+              <text class="pin-label" x="282" y="754" text-anchor="start">코쿠사이도리</text>
+              <circle class="pin" cx="258" cy="746"/>
+              <text class="pin-label" x="250" y="760" text-anchor="end">나미노우에</text>
+            </g>
+            <g class="pin-grp" data-day="4">
+              <circle class="pin" cx="108" cy="344"/>
+              <text class="pin-label" x="104" y="338" text-anchor="end">츄라우미</text>
+              <circle class="pin" cx="120" cy="338"/>
+              <text class="pin-label" x="116" y="352" text-anchor="end">てつこのそば</text>
+              <circle class="pin" cx="112" cy="340"/>
+              <text class="pin-label" x="106" y="368" text-anchor="end">비세·에메랄드</text>
+            </g>
+            <g class="pin-grp" data-day="5">
+              <circle class="pin" cx="208" cy="442"/>
+              <text class="pin-label" x="214" y="444" text-anchor="start">만자모</text>
+              <circle class="pin" cx="222" cy="528"/>
+              <text class="pin-label" x="228" y="530" text-anchor="start">자키미성</text>
+              <circle class="pin" cx="172" cy="558"/>
+              <text class="pin-label" x="166" y="556" text-anchor="end">잔파곶</text>
+              <circle class="pin" cx="228" cy="548"/>
+              <text class="pin-label" x="234" y="562" text-anchor="start">야치문</text>
+              <circle class="pin" cx="232" cy="598"/>
+              <text class="pin-label" x="238" y="601" text-anchor="start">아메리칸빌리지</text>
+            </g>
+            <g class="pin-grp" data-day="6">
+              <circle class="pin" cx="242" cy="348"/>
+              <text class="pin-label" x="248" y="344" text-anchor="start">나키진성터</text>
+            </g>
+            <g class="pin-grp" data-day="7">
+              <circle class="pin" cx="388" cy="182"/>
+              <text class="pin-label" x="394" y="184" text-anchor="start">유이유이</text>
+              <circle class="pin" cx="378" cy="138"/>
+              <text class="pin-label" x="384" y="140" text-anchor="start">가야우치반타</text>
+              <circle class="pin" cx="368" cy="112"/>
+              <text class="pin-label" x="374" y="114" text-anchor="start">다이세키린잔</text>
+              <circle class="pin" cx="358" cy="72"/>
+              <text class="pin-label" x="364" y="68" text-anchor="start">헤도곶</text>
+              <circle class="pin" cx="380" cy="192"/>
+              <text class="pin-label" x="386" y="202" text-anchor="start">오쿠마</text>
+            </g>
+            <g class="pin-grp" data-day="8">
+              <circle class="pin" cx="258" cy="408"/>
+              <text class="pin-label" x="264" y="405" text-anchor="start">오리온 · 나고 쇼핑</text>
+              <circle class="pin" cx="88" cy="396"/>
+              <text class="pin-label" x="82" y="392" text-anchor="end">세소코비치</text>
+            </g>
+            <g class="pin-grp" data-day="9">
+              <circle class="pin" cx="252" cy="392"/>
+              <text class="pin-label" x="258" y="388" text-anchor="start">네오파크 · 파인애플 · 후르츠랜드</text>
+              <circle class="pin" cx="142" cy="378"/>
+              <text class="pin-label" x="136" y="374" text-anchor="end">모토부</text>
+            </g>
+            <g class="pin-grp" data-day="10">
+              <circle class="pin" cx="238" cy="770"/>
+              <text class="pin-label" x="232" y="782" text-anchor="end">나하공항</text>
+            </g>
+          </g>
+
+          <!-- Saraswati base marker -->
+          <g class="base-marker">
+            <circle class="pulse" cx="218" cy="348" r="6"/>
+            <circle class="pin-base" cx="218" cy="348" r="6"/>
+            <text class="base-label" x="210" y="330" text-anchor="end">Saraswati</text>
+            <text class="base-sublabel" x="210" y="342" text-anchor="end">NAKIJIN · BASE</text>
+          </g>
+
+          <!-- Compass rose -->
+          <g transform="translate(450 80)">
+            <circle class="compass-ring" r="22"/>
+            <polygon class="compass-n" points="0,-18 -3.5,-2 0,-6 3.5,-2"/>
+            <polygon class="compass-s" points="0,18 -3.5,2 0,6 3.5,2"/>
+            <text class="compass-label" y="-26" text-anchor="middle">N</text>
+          </g>
+
+          <!-- Scale bar -->
+          <g transform="translate(30 860)">
+            <line class="scale-bar" x1="0" y1="0" x2="54" y2="0"/>
+            <line class="scale-bar" x1="0" y1="-3.5" x2="0" y2="3.5"/>
+            <line class="scale-bar" x1="27" y1="-2" x2="27" y2="2"/>
+            <line class="scale-bar" x1="54" y1="-3.5" x2="54" y2="3.5"/>
+            <text class="scale-label" x="27" y="-8" text-anchor="middle">≈ 20 km</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="map-legend">
+        <div class="legend-head">
+          <span class="legend-kanji">日程 · ROUTES</span>
+          <h3>Day별 동선</h3>
+          <p>Day 패널에 마우스 오버 · 탭</p>
+        </div>
+        <div class="legend-days">
+          <button class="legend-day" data-day-route="1" type="button">
+            <span class="legend-day-num">01</span>
+            <span class="legend-day-title">도착 · 공항→나키진</span>
+            <span class="legend-day-dist">90 km</span>
+          </button>
+          <button class="legend-day" data-day-route="2" type="button">
+            <span class="legend-day-num">02</span>
+            <span class="legend-day-title">코우리 + 하트록</span>
+            <span class="legend-day-dist">근거리</span>
+          </button>
+          <button class="legend-day" data-day-route="3" type="button">
+            <span class="legend-day-num">03</span>
+            <span class="legend-day-title">나하 종일</span>
+            <span class="legend-day-dist">200 km</span>
+          </button>
+          <button class="legend-day" data-day-route="4" type="button">
+            <span class="legend-day-num">04</span>
+            <span class="legend-day-title">츄라우미 번들 ★</span>
+            <span class="legend-day-dist">근거리</span>
+          </button>
+          <button class="legend-day" data-day-route="5" type="button">
+            <span class="legend-day-num">05</span>
+            <span class="legend-day-title">요미탄 · 차탄</span>
+            <span class="legend-day-dist">120 km</span>
+          </button>
+          <button class="legend-day" data-day-route="6" type="button">
+            <span class="legend-day-num">06</span>
+            <span class="legend-day-title">나키진성 · 숙소 휴식</span>
+            <span class="legend-day-dist">극근거리</span>
+          </button>
+          <button class="legend-day" data-day-route="7" type="button">
+            <span class="legend-day-num">07</span>
+            <span class="legend-day-title">얀바루 + 히지폭포</span>
+            <span class="legend-day-dist">120 km</span>
+          </button>
+          <button class="legend-day" data-day-route="8" type="button">
+            <span class="legend-day-num">08</span>
+            <span class="legend-day-title">나고 + 세소코비치</span>
+            <span class="legend-day-dist">근거리</span>
+          </button>
+          <button class="legend-day" data-day-route="9" type="button">
+            <span class="legend-day-num">09</span>
+            <span class="legend-day-title">네오파크 · 모토부</span>
+            <span class="legend-day-dist">70 km</span>
+          </button>
+          <button class="legend-day" data-day-route="10" type="button">
+            <span class="legend-day-num">10</span>
+            <span class="legend-day-title">출발 · 공항</span>
+            <span class="legend-day-dist">90 km</span>
+          </button>
+        </div>
+        <div class="legend-foot">
+          <div class="legend-marker"><span class="swatch swatch-base"></span>Saraswati (숙소)</div>
+          <div class="legend-marker"><span class="swatch swatch-pin"></span>주요 지점</div>
+          <div class="legend-marker"><span class="swatch swatch-route"></span>이동 경로 (Day 선택 시 강조)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 1 ========== -->
+<section class="day" id="day-1">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day One</span>
+        <span class="num">01</span><span class="of">/ 10</span>
+        <span class="date">4월 28일 · 화요일<span class="holiday">도착일 · 전원</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-all">All Together · 가벼운 일정</span>
+        <h2>14시 도착, <em>숙소에서 첫 저녁</em></h2>
+        <p class="lede">
+          ICN 11:20 이륙 → OKA 14:00 착륙. 점심은 기내식으로 해결.
+          북상 길에 식료품만 채우고 숙소에 도착해, 사온 재료로 저녁을 지어먹는다.
+          첫날은 외식·관광 없이 숙소에서 조용히. 여력이 있으면 <em>만자모 일몰</em>은 대체 일정으로.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-row pt-move"><div class="tl-time">11:20<small>ICN</small></div><div class="tl-content"><strong>서울 출발</strong> — 기내식으로 점심 해결.</div></div>
+      <div class="tl-row pt-move"><div class="tl-time">14:00<small>OKA</small></div><div class="tl-content"><strong>나하공항 도착</strong> → 입국·수하물·렌터카 수령 (약 1~1.5시간)</div></div>
+      <div class="tl-row pt-move"><div class="tl-time">15:30</div><div class="tl-content">북상 출발 — 허가세 IC → 교다 IC 고속도로 (90km / 1시간 30분)</div></div>
+      <div class="tl-row"><div class="tl-time">17:00 — 17:45</div><div class="tl-content"><strong>식료품 보급 #1</strong> — 카네히데 나키진 사쿠라마켓 <span class="detail">저녁 식재료 + 아침·다음날 식재료를 한 번에. 22~24시까지 영업.</span></div></div>
+      <div class="tl-row pt-rest"><div class="tl-time">18:00</div><div class="tl-content">숙소 체크인, 짐 정리</div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">19:00 —</div><div class="tl-content">저녁 — <strong>숙소 자취</strong>. 사온 재료로 간단하게. <span class="detail">첫날은 이동 피로가 크니 외식보다 숙소 저녁이 편하다.</span></div></div>
+    </div>
+
+    <div class="planb">
+      <div class="planb-head">
+        <span class="planb-badge">+</span>
+        <span class="planb-label">대체 일정 · Optional</span>
+        <span class="planb-case">여력·컨디션 좋을 때</span>
+      </div>
+      <ul class="planb-list">
+        <li><strong>만자모(万座毛)</strong> — 코끼리 바위 절벽, 일몰 뷰, 무료. 온나촌 소재. <strong>이시카와 IC</strong>에서 내려 국도 58호로 7km / 10~15분 우회</li>
+        <li>시간표 예시: 16:30 이시카와 IC → 17:00 만자모 도착 → 17:30 출발 → 18:45 카네히데 나키진 → 19:30 숙소 체크인 → 20:30~ 저녁 자취 (본 일정보다 약 +1시간)</li>
+        <li>일몰(약 18:30) 직전 타이밍이 가장 아름답다. 다만 아기와 어른 모두 이동 피로가 있으니 기내식·렌터카 수령이 빠르게 끝난 날만</li>
+        <li>스킵해도 Day 5에 정식으로 방문 예정 — 무리하지 않는다</li>
+      </ul>
+    </div>
+
+    <div class="day-notes">
+      <p class="day-note">나하 → 나키진 약 90km / 1시간 30분. 고속도로 이용 시 허가세 IC에서 교다 IC로 빠진다.</p>
+      <p class="day-note">점심은 기내식으로 대체 — 공항에서 내린 뒤 별도 점심 없이 바로 북상.</p>
+      <p class="day-note">Saraswati 체크인 가능 시각을 사전 확인. 저녁 도착이 늦어지면 관리자에게 연락.</p>
+      <p class="day-note">첫날 저녁용으로 조리 부담 적은 식재료 선택: 오키나와 도시락·포크란천 미트·즉석 된장국·밥·과일 등.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 2 ========== -->
+<section class="day day-odd" id="day-2">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day Two</span>
+        <span class="num">02</span><span class="of">/ 10</span>
+        <span class="date">4월 29일 · 수요일<span class="holiday">쇼와의 날 · 활동일</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-all">All Together · 근거리 · 수영 포함</span>
+        <h2>코우리섬 · <em>하트록</em>과 에메랄드 바다</h2>
+        <p class="lede">
+          쇼와의 날이지만 GW 본 피크(5/3~5/5) 전. 오전 코우리대교 → 오션타워 → SNS 명소 하트록까지 돌고,
+          점심 후 코우리비치에서 본격 수영. 돌아오는 길 와루미대교 전망대 경유 — 숙소 반경 20km 이내.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-row pt-move"><div class="tl-time">09:00</div><div class="tl-content">출발 → <strong>코우리섬</strong> (12km / 20분)</div></div>
+      <div class="tl-row"><div class="tl-time">09:30</div><div class="tl-content"><strong>코우리대교</strong> 건너기 — 에메랄드빛 바다 위 드라이브, 차 안 포토</div></div>
+      <div class="tl-row"><div class="tl-time">09:45 — 11:00</div><div class="tl-content"><strong>코우리 오션타워</strong> — 전망대, 자동카트 (아기도 탑승 가능)</div></div>
+      <div class="tl-row"><div class="tl-time">11:00 — 12:00</div><div class="tl-content"><strong>티느하마(ティーヌ浜) · 하트록(ハートロック)</strong> <span class="detail">SNS 명소. 간조 시각엔 바다 위 도보로 접근 가능. 코우리비치 북쪽.</span></div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">점심</div><div class="tl-content">코우리섬 내 <strong>しらさ食堂</strong> — 해산물덮밥 (1,000엔대)</div></div>
+      <div class="tl-row"><div class="tl-time">13:00 — 14:00</div><div class="tl-content"><strong>코우리비치 수영</strong> — 얕고 잔잔한 물, 아기 물놀이 · 어른 가벼운 수영</div></div>
+      <div class="tl-row pt-move"><div class="tl-time">14:30</div><div class="tl-content">섬 출발</div></div>
+      <div class="tl-row"><div class="tl-time">15:00</div><div class="tl-content"><strong>와루미대교 전망대</strong> <span class="jp">ワルミ大橋</span> — 나키진 경유, 절경</div></div>
+      <div class="tl-row pt-rest"><div class="tl-time">15:30</div><div class="tl-content">숙소 복귀</div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">저녁</div><div class="tl-content">숙소 자취</div></div>
+    </div>
+
+    <div class="planb">
+      <div class="planb-head">
+        <span class="planb-badge">B</span>
+        <span class="planb-label">Plan B</span>
+        <span class="planb-case">아기 컨디션 불량 / 비</span>
+      </div>
+      <ul class="planb-list">
+        <li>코우리 오션타워만 보고 조기 귀환 — 왕복 40분이라 부담 없음</li>
+        <li>비: 오션타워는 실내 전시도 있어 OK, 비치만 스킵</li>
+        <li>아기가 많이 보채면 코우리대교 드라이브만 하고 섬 한 바퀴 돌고 복귀</li>
+      </ul>
+    </div>
+
+    <div class="day-notes">
+      <p class="day-note">쇼와의 날은 단일 공휴일로 GW 본 피크(5/3~5/5) 전이라 정체 상대적 덜함. 오전 9시 전 코우리대교 진입 권장.</p>
+      <p class="day-note"><strong>하트록 간조 시각 사전 확인</strong> — 네이버/구글 "코우리 하트록 간조" 검색. 간조 타이밍에 맞추면 바다 위 도보 가능.</p>
+      <p class="day-note">수영용품 사전 준비 — 아기 수영복, 수영 기저귀, 비치 타올, 모자, 선크림.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 3 ========== -->
+<section class="day day-split" id="day-3">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day Three</span>
+        <span class="num">03</span><span class="of">/ 10</span>
+        <span class="date">4월 30일 · 목요일<span class="holiday">휴식일 · 조 분리</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-split">Split Day · 활동조 + 돌봄조</span>
+        <h2>활동조는 <em>나하 6곳 압축</em>, 돌봄조는 숙소에서</h2>
+        <p class="lede">
+          평일 목요일에 배치한 나하. Plan1의 8곳을 <strong>6곳으로 압축</strong>해 체류 시간을 합리화.
+          시키나엔은 성격이 코쿠사이·야치문도리와 겹쳐 제외하고, 핵심 동선을 직선화.
+        </p>
+      </div>
+    </div>
+
+    <div class="split-grid">
+      <div class="split-col active-team">
+        <h3><span class="tag">Active</span>활동조 · 나하 + 우라소에 (6곳)</h3>
+        <div class="dist">총 이동거리 약 200 km · 왕복 3시간 운전</div>
+        <div class="timeline">
+          <div class="tl-row pt-move"><div class="tl-time">07:30</div><div class="tl-content">출발 → 나하 방면 (90km / 1시간 30분)</div></div>
+          <div class="tl-row"><div class="tl-time">09:00 — 10:00</div><div class="tl-content"><strong>슈리성</strong> <span class="jp">首里城</span><span class="detail">복원 진행 중 — 성벽·전망·정전. 아침이라 한산.</span></div></div>
+          <div class="tl-row"><div class="tl-time">10:00 — 10:30</div><div class="tl-content"><strong>킨조초 이시다타미</strong> <span class="jp">金城町石畳道</span><span class="detail">슈리성에서 도보 7분. 300m 류큐석회암 돌길, 빨간기와 마을 산책.</span></div></div>
+          <div class="tl-row pt-meal"><div class="tl-time">점심</div><div class="tl-content"><strong>海鮮食堂 太陽(티다)</strong> <span class="detail">우라소에시 牧港5-22-2. 해산물덮밥 850엔~, 天丼 750엔~. <strong>11시 오픈 직후 도착 목표!</strong> 줄서는 맛집.</span></div></div>
+          <div class="tl-row"><div class="tl-time">12:30 — 13:30</div><div class="tl-content"><strong>쓰보야 야치문도리</strong> <span class="jp">壺屋やちむん通り</span><span class="detail">도자기 골목 400m, 공방·갤러리. 太陽에서 7km / 15분.</span></div></div>
+          <div class="tl-row"><div class="tl-time">13:30 — 15:30</div><div class="tl-content"><strong>코쿠사이도리</strong> <span class="jp">国際通り</span> + <strong>마키시 공설시장</strong> <span class="detail">쇼핑·기념품·시장 구경. 야치문도리에서 도보 5분.</span></div></div>
+          <div class="tl-row pt-rest"><div class="tl-time">15:30 — 16:30</div><div class="tl-content">카페에서 휴식 / 코쿠사이도리 뒷골목 탐방</div></div>
+          <div class="tl-row"><div class="tl-time">16:30 — 17:00</div><div class="tl-content"><strong>나미노우에궁</strong> <span class="jp">波上宮</span><span class="detail">절벽 위 신사, 노을 직전. 나미노우에 비치 산책.</span></div></div>
+          <div class="tl-row pt-meal"><div class="tl-time">17:30 — 19:00</div><div class="tl-content"><strong>사카에마치 시장</strong> <span class="jp">栄町市場</span><span class="detail">재래시장이 저녁이면 선술집 골목으로 변신. 센베로(千ベロ) 1,000엔. 유이레일 아사토역 도보 2분.</span></div></div>
+          <div class="tl-row pt-move"><div class="tl-time">19:00</div><div class="tl-content">나하 출발 → 숙소 복귀 (야간 한산)</div></div>
+          <div class="tl-row pt-rest"><div class="tl-time">20:30</div><div class="tl-content">숙소 도착</div></div>
+        </div>
+
+        <div class="day-notes">
+          <p class="day-note"><strong>Plan1 대비 변경</strong>: 시키나엔 제외(회유식 정원이 코쿠사이·야치문과 성격 중복, 시간 절약 1시간). 동선도 직선화.</p>
+          <p class="day-note">海鮮食堂 太陽: 월요일 휴무, 11:00~15:30. 목요일 영업. 우라소에시 牧港5-22-2.</p>
+          <p class="day-note">동선: 슈리성 → 킨조초 → 太陽 → 쓰보야 → 코쿠사이 → 나미노우에 → 사카에마치. 동→서→중심→북 순.</p>
+        </div>
+      </div>
+
+      <div class="split-col care-team">
+        <h3><span class="tag">Care</span>돌봄조</h3>
+        <div class="dist">숙소 주변 · 반경 2km 이내</div>
+        <ul class="care-list">
+          <li>숙소 발코니에서 바다 전망 감상</li>
+          <li>주변 주택가 산책 — 나키진 고민가 동네</li>
+          <li>아기 낮잠, 여유로운 오후</li>
+          <li>활동조 복귀 전 간단한 저녁 준비</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 4 ========== -->
+<section class="day" id="day-4">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day Four</span>
+        <span class="num">04</span><span class="of">/ 10</span>
+        <span class="date">5월 1일 · 금요일<span class="holiday">활동일 · 전원</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-all">All Together · 반경 2km 번들 · 수영 ★</span>
+        <h2>츄라우미 · てつこのそば · 후쿠기 · 에메랄드비치, <em>한 덩어리</em></h2>
+        <p class="lede">
+          <strong>Plan2 재구성의 핵심</strong>. 츄라우미 수족관 반경 2km 안에
+          てつこのそば(8분) · 비세 후쿠기(2km) · 에메랄드비치(해양박공원 내)가 모두 있다.
+          평일 금요일 오전 수족관 → 모토부 고민가 소바 → 후쿠기 가로수 → 에메랄드비치 수영을 <strong>하루에 묶었다.</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-row pt-move"><div class="tl-time">08:00</div><div class="tl-content">출발 → 츄라우미 수족관 (10km / 20분)</div></div>
+      <div class="tl-row"><div class="tl-time">08:30</div><div class="tl-content"><strong>개장과 동시 입장</strong> <span class="detail">GW 직전 평일, 오전이 가장 한산. 전날 편의점(패밀리마트 등)에서 할인 입장권 구매.</span></div></div>
+      <div class="tl-row"><div class="tl-time">08:30 — 11:30</div><div class="tl-content"><strong>츄라우미 수족관</strong> — 쿠로시오의 바다 대수조, 돌고래 쇼(11:00), 터치풀</div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">11:45 — 13:00</div><div class="tl-content"><strong>てつこのそば</strong> <span class="jp">テツコのそば</span><span class="detail">모토부 고민가 소바집 (具志堅760). 수족관에서 8분 / 2km. 고민가 오키나와 소바 1,000엔 이하.</span></div></div>
+      <div class="tl-row"><div class="tl-time">13:15 — 14:15</div><div class="tl-content"><strong>비세 후쿠기 가로수길</strong> <span class="jp">備瀬フクギ並木</span><span class="detail">수령 300년 방풍림 터널. 유모차로 그늘길 산책. 소바집에서 2km.</span></div></div>
+      <div class="tl-row"><div class="tl-time">14:30 — 16:00</div><div class="tl-content"><strong>에메랄드비치 수영</strong> <span class="detail">해양박공원 내. 물결 잔잔하고 얕아 아기 물놀이 가능. 샤워시설 완비.</span></div></div>
+      <div class="tl-row pt-move"><div class="tl-time">16:30</div><div class="tl-content">숙소 복귀 (10km / 15분)</div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">저녁</div><div class="tl-content">숙소 자취</div></div>
+    </div>
+
+    <div class="planb">
+      <div class="planb-head">
+        <span class="planb-badge">B</span>
+        <span class="planb-label">Plan B</span>
+        <span class="planb-case">아기 컨디션 불량 / 비</span>
+      </div>
+      <ul class="planb-list">
+        <li>아기 보채면 수족관 + てつこのそば만 보고 조기 귀환 (숙소 20분)</li>
+        <li>비: 수족관(실내) + てつこのそば + 오키나와 후르츠랜드(실내) 조합으로 전환, 후쿠기·에메랄드 스킵</li>
+        <li>돌고래 쇼 스킵 가능 — 대수조 위주 1~2시간 집중 관람</li>
+      </ul>
+    </div>
+
+    <div class="day-notes">
+      <p class="day-note"><strong>てつこのそば 정기 휴무 사전 전화 확인</strong> — 휴무면 きしもと食堂/岸本食堂(도보권)으로 대체.</p>
+      <p class="day-note">수영용품 지참 — 수영복, 비치 타올, 아쿠아 슈즈. 에메랄드비치 샤워·탈의실 이용 가능.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 5 ========== -->
+<section class="day day-split" id="day-5">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day Five</span>
+        <span class="num">05</span><span class="of">/ 10</span>
+        <span class="date">5월 2일 · 토요일<span class="holiday">휴식일 · 조 분리</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-split">Split Day · 중부 외출</span>
+        <h2>활동조는 <em>요미탄 · 차탄</em>으로, 해안을 따라</h2>
+        <p class="lede">
+          중부 해안의 큰 풍경들을 하루에 엮었다. 만자모와 잔파곶의 절벽, 자키미의 아치문,
+          야치문의 공방과 아메리칸빌리지까지. 토요일 오후 혼잡을 피해 <strong>08:00 출발</strong>,
+          아메리칸빌리지는 피크 타임 전에 빠져나온다. 돌아오는 길에 식료품 보급 #2.
+        </p>
+      </div>
+    </div>
+
+    <div class="split-grid">
+      <div class="split-col active-team">
+        <h3><span class="tag">Active</span>활동조 · 요미탄 + 차탄</h3>
+        <div class="dist">총 이동거리 약 120 km · 해안선 루프</div>
+        <div class="timeline">
+          <div class="tl-row pt-move"><div class="tl-time">08:00</div><div class="tl-content">출발 → 중부 방면 <span class="detail">토요일 혼잡 회피를 위해 30분 앞당김.</span></div></div>
+          <div class="tl-row"><div class="tl-time">09:00 — 09:30</div><div class="tl-content"><strong>만자모</strong> <span class="jp">万座毛</span><span class="detail">코끼리 바위 절벽, 전망대 리뉴얼 완료. 30km / 40분.</span></div></div>
+          <div class="tl-row"><div class="tl-time">09:50 — 10:30</div><div class="tl-content"><strong>자키미성터</strong> <span class="jp">座喜味城跡</span><span class="detail">세계유산, 오키나와 최고(最古) 아치문. 만자모에서 12km / 20분.</span></div></div>
+          <div class="tl-row"><div class="tl-time">10:45 — 11:30</div><div class="tl-content"><strong>잔파곶</strong> <span class="jp">残波岬</span><span class="detail">절벽 위 등대, 2km 해안절벽. 자키미에서 5km / 10분.</span></div></div>
+          <div class="tl-row pt-meal"><div class="tl-time">11:30 — 12:15</div><div class="tl-content">점심 — <strong>花織そば</strong> (잔파곶 근처, 요미탄) 또는 <strong>りんくる食堂</strong> (차탄, 1,000엔 이하) <span class="detail">주말 혼잡 피해 11:30 이전 입성.</span></div></div>
+          <div class="tl-row"><div class="tl-time">12:30 — 13:15</div><div class="tl-content"><strong>야치문의 마을</strong> <span class="jp">読谷やちむんの里</span><span class="detail">도자기 공방·갤러리, 무료. 잔파곶에서 5km / 10분.</span></div></div>
+          <div class="tl-row"><div class="tl-time">13:30 — 14:30</div><div class="tl-content"><strong>아메리칸빌리지</strong> — 쇼핑·산책·데포아일랜드 <span class="detail">야치문에서 8km / 15분. 토요일 오후 피크 진입 전에 짧게 돌고 이동. 선셋비치는 스킵.</span></div></div>
+          <div class="tl-row"><div class="tl-time">14:30 — 15:00</div><div class="tl-content"><strong>식료품 보급 #2</strong> — 이온 차탄점 / 산에이</div></div>
+          <div class="tl-row pt-move"><div class="tl-time">15:00</div><div class="tl-content">숙소 복귀 (45km / 55분)</div></div>
+          <div class="tl-row pt-meal"><div class="tl-time">저녁</div><div class="tl-content">숙소 자취</div></div>
+        </div>
+
+        <div class="day-notes">
+          <p class="day-note">중부 동선: 숙소 → 만자모 → 자키미성 → 잔파곶 → 야치문 → 아메리칸빌리지 → 이온 차탄 → 숙소. 북→남→북, 해안선 따라 효율적 루프.</p>
+          <p class="day-note">토요일이라 아메리칸빌리지는 오후 2시 이후 급혼잡. 14:30 이전에 빠져나오는 것이 핵심.</p>
+        </div>
+
+        <div class="planb" style="background:rgba(120,180,160,0.08);border-color:rgba(120,180,160,0.3)">
+          <div class="planb-head">
+            <span class="planb-badge">+</span>
+            <span class="planb-label">옵션 · Bonus</span>
+            <span class="planb-case">시간 여유 시</span>
+          </div>
+          <ul class="planb-list">
+            <li><strong>부세나 해중전망탑(ブセナ海中公園)</strong> — 나고만, 유리 해중 전망대 + 글래스보트</li>
+            <li>만자모에서 15km / 20분, 입장 1,050엔(전망탑) · 2,100엔(보트) · 2,640엔(세트)</li>
+            <li>만자모 다음(10:00경)에 1시간 할애, 자키미성을 11:30으로 밀면 합류 가능</li>
+            <li>아기 친화적 — 배 멀미 없고 실내 수족관 같은 체험</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="split-col care-team">
+        <h3><span class="tag">Care</span>돌봄조</h3>
+        <div class="dist">숙소 주변</div>
+        <ul class="care-list">
+          <li>숙소에서 여유롭게 휴식</li>
+          <li>주변 산책, 아기 놀이</li>
+          <li>바다 바라보며 낮잠 타이밍에 맞춰 움직이기</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 6 ========== -->
+<section class="day" id="day-6">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day Six</span>
+        <span class="num">06</span><span class="of">/ 10</span>
+        <span class="date">5월 3일 · 일요일<span class="holiday">헌법기념일 · 활동일</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-all">All Together · 경량 · 오후 숙소 휴식 ★</span>
+        <h2>나키진성 한 곳, <em>그리고 온전한 오후 회복</em></h2>
+        <p class="lede">
+          GW 본 피크(5/3 헌법기념일). Day 4에서 후쿠기·에메랄드를 이미 선점했으므로
+          이 날은 <strong>세계유산 나키진성 한 곳</strong>만 집중하고 오후는 <strong>전원 숙소에서 회복</strong>.
+          여행 중반의 리듬 리셋 — 아기·어른 모두에게 필요한 휴식이다.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-row pt-move"><div class="tl-time">09:30</div><div class="tl-content">출발 → <strong>나키진성터</strong> <span class="jp">今帰仁城跡</span> (5km / 15분)</div></div>
+      <div class="tl-row"><div class="tl-time">09:45 — 11:30</div><div class="tl-content">나키진성 관람 — 세계유산, 성벽 산책, 오키나와 최고(最古) 류큐 성곽. <span class="detail">유모차로 메인 길. 오전이라 상대적 덜 붐빔.</span></div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">점심</div><div class="tl-content"><strong>岸本食堂</strong> 또는 <strong>きしもと食堂</strong> — 모토부 소바 원조 <span class="detail">てつこのそば는 Day 4에 방문. 이 날은 대체 소바집으로.</span></div></div>
+      <div class="tl-row pt-rest"><div class="tl-time">13:30</div><div class="tl-content">숙소 복귀 — <strong>오후는 전원 숙소 휴식</strong></div></div>
+      <div class="tl-row pt-rest"><div class="tl-time">14:00 — 16:30</div><div class="tl-content">발코니·아기 낮잠·책·낮술·느린 시간 <span class="detail">여행 중반 체력 리셋. GW 피크라 외출 스트레스 회피.</span></div></div>
+      <div class="tl-row"><div class="tl-time">17:00 — 18:00</div><div class="tl-content"><strong>숙소 근처 해안 산책</strong> — 나키진 해변 또는 운탄잔 비치 (차량 10분) <span class="detail">석양 타이밍, 관광객 없는 로컬 해변.</span></div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">저녁</div><div class="tl-content">숙소 자취</div></div>
+    </div>
+
+    <div class="planb">
+      <div class="planb-head">
+        <span class="planb-badge">B</span>
+        <span class="planb-label">Plan B</span>
+        <span class="planb-case">나키진성 심각 혼잡 / 비</span>
+      </div>
+      <ul class="planb-list">
+        <li>나키진성 혼잡 심각: 메인 길만 빠르게, 30분 안에 정리하고 숙소로</li>
+        <li>비: 나키진성 스킵, Day 4에 이미 방문했으므로 후쿠기 재방문도 생략, 종일 숙소 휴식</li>
+        <li>숙소 근처 해안은 저녁 이후 비 그치면 가벼운 산책</li>
+      </ul>
+    </div>
+
+    <div class="day-notes">
+      <p class="day-note">GW 본 피크 — <strong>의도적으로 경량화</strong>. 오후 숙소 휴식이 핵심. Plan1의 "후쿠기+에메랄드+てつこのそば+나키진성"(4곳 혼잡)을 Plan2에서 Day 4로 분산.</p>
+      <p class="day-note">てつこのそば는 Day 4 주 방문, Day 9 재방문 선택지로 이동. Day 6은 대체 소바집(岸本/きしもと).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 7 ========== -->
+<section class="day day-split" id="day-7">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day Seven</span>
+        <span class="num">07</span><span class="of">/ 10</span>
+        <span class="date">5월 4일 · 월요일<span class="holiday">녹의 날 · 조 분리</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-split">Split Day · 얀바루 북부 + 폭포 트레킹</span>
+        <h2>활동조는 <em>얀바루 숲</em>과 <em>히지폭포</em>까지</h2>
+        <p class="lede">
+          국도 58호를 따라 북으로. 80m 절벽 가야우치반타, 기암괴석 다이세키린잔,
+          최북단 헤도곶, 오쿠마 백사장에 이어 <strong>히지폭포 트레킹</strong>까지.
+          자연 탐방지라 GW 피크에도 상대적 한산.
+        </p>
+      </div>
+    </div>
+
+    <div class="split-grid">
+      <div class="split-col active-team">
+        <h3><span class="tag">Active</span>활동조 · 얀바루 + 히지폭포</h3>
+        <div class="dist">총 이동거리 약 120 km · 국도 58호 해안 드라이브</div>
+        <div class="timeline">
+          <div class="tl-row pt-move"><div class="tl-time">08:00</div><div class="tl-content">출발 → 북부 방면 (국도58호 해안 드라이브) <span class="detail">히지폭포 마감 시간 고려해 30분 앞당김.</span></div></div>
+          <div class="tl-row"><div class="tl-time">09:00</div><div class="tl-content"><strong>도의역 유이유이 쿠니가미</strong> <span class="jp">ゆいゆい国頭</span><span class="detail">쿠니가미 특산품, 이노부타 소시지. 30km / 40분.</span></div></div>
+          <div class="tl-row"><div class="tl-time">09:30 — 10:00</div><div class="tl-content"><strong>가야우치반타</strong> <span class="jp">茅打ちバンタ</span><span class="detail">높이 80m 절벽 전망대, 동중국해 파노라마. 유이유이에서 10km / 15분.</span></div></div>
+          <div class="tl-row"><div class="tl-time">10:15 — 11:45</div><div class="tl-content"><strong>다이세키린잔</strong> <span class="jp">大石林山</span><span class="detail">기암괴석 트레킹, 4개 코스 중 택 1~2. 가야우치에서 2km / 5분.</span></div></div>
+          <div class="tl-row pt-meal"><div class="tl-time">점심</div><div class="tl-content">다이세키린잔 내 식당 또는 유이유이 복귀해서 식사</div></div>
+          <div class="tl-row"><div class="tl-time">13:00 — 13:30</div><div class="tl-content"><strong>헤도곶</strong> <span class="jp">辺戸岬</span><span class="detail">오키나와 최북단, 요론섬 조망. 다이세키린잔에서 3km / 5분.</span></div></div>
+          <div class="tl-row"><div class="tl-time">14:00 — 14:30</div><div class="tl-content"><strong>오쿠마비치</strong> 산책 — 백사장 1km, 국립공원 내 (헤도곶에서 20km / 25분)</div></div>
+          <div class="tl-row"><div class="tl-time">14:45 — 16:00</div><div class="tl-content"><strong>히지폭포 트레킹</strong> <span class="jp">比地大滝</span><span class="detail">왕복 2.6km, 25m 폭포. 약 1시간 30분 소요, 입장 500엔. 오쿠마에서 5km / 10분.</span></div></div>
+          <div class="tl-row pt-rest"><div class="tl-time">16:30</div><div class="tl-content">숙소 복귀 (25km / 30분)</div></div>
+          <div class="tl-row pt-meal"><div class="tl-time">저녁</div><div class="tl-content">숙소 자취</div></div>
+        </div>
+
+        <div class="day-notes">
+          <p class="day-note">얀바루 동선: 숙소 → 유이유이 → 가야우치반타 → 다이세키린잔 → 헤도곶 → 오쿠마 → <strong>히지폭포</strong> → 숙소.</p>
+          <p class="day-note"><strong>히지폭포 입산 마감 시각 사전 확인</strong> (통상 16:00). 체력 부담되면 300m 지점 나무 다리까지만 다녀와도 OK.</p>
+        </div>
+      </div>
+
+      <div class="split-col care-team">
+        <h3><span class="tag">Care</span>돌봄조</h3>
+        <div class="dist">숙소 · 운탄잔 비치 (차 10분)</div>
+        <ul class="care-list">
+          <li>숙소에서 여유롭게 휴식</li>
+          <li>아기와 <strong>운탄잔 비치 근처 산책</strong> — 로컬 해변, 관광객 없음</li>
+          <li>활동조 복귀 맞춰 저녁 준비</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 8 ========== -->
+<section class="day" id="day-8">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day Eight</span>
+        <span class="num">08</span><span class="of">/ 10</span>
+        <span class="date">5월 5일 · 화요일<span class="holiday">어린이날 · 활동일</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-all">All Together · 실내 중심 + 세소코비치 ★</span>
+        <h2>맥주·쇼핑, <em>그리고 오후엔 세소코 바다</em></h2>
+        <p class="lede">
+          어린이날 가족 관광지는 피크. 오전은 <strong>실내 중심</strong>으로 오리온 맥주공장 견학, 나고 시내 소바, 식료품·아기용품 보충.
+          오후는 <strong>세소코섬으로 이동해 수영</strong>. 투명한 바다에서 GW 피크를 가장 덜 느끼는 곳.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-row pt-move"><div class="tl-time">10:00</div><div class="tl-content">출발 → 나고 (18km / 25분) <span class="detail">연휴 피크라 아침 여유 있게 시작.</span></div></div>
+      <div class="tl-row"><div class="tl-time">10:30 — 11:30</div><div class="tl-content"><strong>오리온 해피파크</strong>(맥주공장) — 무료 견학 + 시음 (실내, 아기 동반 가능) <span class="detail">어린이날에도 덜 붐비는 편.</span></div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">11:30 — 12:30</div><div class="tl-content">점심 — 나고 시내 <strong>나고소바 가도</strong> 각 매장 <span class="detail">てつこのそば는 Day 4에 방문 완료. 여기는 대체 소바.</span></div></div>
+      <div class="tl-row"><div class="tl-time">13:00 — 14:00</div><div class="tl-content"><strong>식료품 보급 #3</strong> (빅원 나고 / 카네히데 나고점) + <strong>니시마츠야 나고오미나미점</strong> — 아기용품 보충</div></div>
+      <div class="tl-row pt-move"><div class="tl-time">14:30</div><div class="tl-content">나고 → <strong>세소코섬</strong> 이동 (10km / 15분), 세소코대교 건너기</div></div>
+      <div class="tl-row"><div class="tl-time">15:00 — 17:00</div><div class="tl-content"><strong>세소코비치 수영</strong> <span class="jp">瀬底ビーチ</span> — 투명한 에메랄드 바다, 샤워시설 완비 <span class="detail">오후 햇살이 물 속까지 비치는 베스트 타이밍.</span></div></div>
+      <div class="tl-row pt-rest"><div class="tl-time">17:30</div><div class="tl-content">숙소 복귀 (10km / 15분)</div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">저녁</div><div class="tl-content">숙소 자취</div></div>
+    </div>
+
+    <div class="planb">
+      <div class="planb-head">
+        <span class="planb-badge">B</span>
+        <span class="planb-label">Plan B</span>
+        <span class="planb-case">아기 컨디션 불량 / 비 / 혼잡</span>
+      </div>
+      <ul class="planb-list">
+        <li>비: 세소코비치 스킵 → 오리온 + 나고 쇼핑만 마치고 조기 귀환</li>
+        <li>아기 보채면: 식료품·니시마츠야만 빠르게 처리하고 숙소 직귀</li>
+        <li>세소코비치가 혼잡하면 Day 9로 미루기 (Day 9 오후에 세소코 추가 가능)</li>
+      </ul>
+    </div>
+
+    <div class="day-notes">
+      <p class="day-note">어린이날 — 네오파크·파인애플파크·후르츠랜드는 극혼잡. Day 9로 이동 배치.</p>
+      <p class="day-note">세소코비치: 주차 유료(1,000엔 내외), 샤워·탈의실 유료 이용 가능. 수영용품 지참.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 9 ========== -->
+<section class="day day-split" id="day-9">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day Nine</span>
+        <span class="num">09</span><span class="of">/ 10</span>
+        <span class="date">5월 6일 · 수요일<span class="holiday">대체공휴일 · 조 분리</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-split">Split Day · 가족 테마파크 · 여유</span>
+        <h2>네오파크와 파인애플파크, <em>여유 있는 마지막 외출</em></h2>
+        <p class="lede">
+          돌아가기 전날. Day 8에서 미뤄둔 가족 테마파크를 오늘. 네오파크, 파인애플파크, 후르츠랜드
+          — 모두 나고 시내에 몰려 있어 이동 부담 적다. 오후엔 모토부 항구 마을 산책 후 숙소에서 짐 정리.
+          세소코는 Day 8에 이미 다녀왔으니 여기선 생략.
+        </p>
+      </div>
+    </div>
+
+    <div class="split-grid">
+      <div class="split-col active-team">
+        <h3><span class="tag">Active</span>활동조 · 나고 + 모토부 반도</h3>
+        <div class="dist">총 이동거리 약 70 km · 근거리 마무리</div>
+        <div class="timeline">
+          <div class="tl-row pt-move"><div class="tl-time">08:30</div><div class="tl-content">출발 → 나고 방면</div></div>
+          <div class="tl-row"><div class="tl-time">09:00 — 10:30</div><div class="tl-content"><strong>네오파크 오키나와</strong> — 동물 먹이주기, 자연동물원 (18km / 25분) <span class="detail">어린이날 다음날이라 상대적으로 덜 붐빔. 개장 직후 입장.</span></div></div>
+          <div class="tl-row"><div class="tl-time">10:45 — 11:30</div><div class="tl-content"><strong>나고 파인애플파크</strong> — 자동카트, 시식, 기념품 쇼핑 (네오파크에서 3km / 5분)</div></div>
+          <div class="tl-row"><div class="tl-time">11:45 — 12:30</div><div class="tl-content"><strong>오키나와 후르츠랜드</strong> — 열대 과일 시식, 트로피컬 왕국 (파인애플에서 3km / 5분)</div></div>
+          <div class="tl-row pt-meal"><div class="tl-time">점심</div><div class="tl-content"><strong>岸本食堂</strong> 또는 <strong>てつこのそば</strong> 재방문 (Day 4 맛이 좋았다면)</div></div>
+          <div class="tl-row"><div class="tl-time">14:00 — 14:45</div><div class="tl-content"><strong>모토부 마을</strong> 산책 — 항구 분위기, 기념품 쇼핑</div></div>
+          <div class="tl-row pt-move"><div class="tl-time">15:00</div><div class="tl-content">숙소 복귀 (10km / 15분)</div></div>
+          <div class="tl-row pt-rest"><div class="tl-time">오후</div><div class="tl-content">전원 짐 정리, 마지막 밤</div></div>
+          <div class="tl-row pt-meal"><div class="tl-time">저녁</div><div class="tl-content">숙소 자취</div></div>
+        </div>
+
+        <div class="day-notes">
+          <p class="day-note">동선: 숙소 → 네오파크 → 파인애플파크 → 후르츠랜드 → 岸本食堂 → 모토부 → 숙소.</p>
+          <p class="day-note">대체공휴일이지만 어린이날 피크 후라 인파 완화.</p>
+          <p class="day-note">세소코비치는 Day 8 오후에 방문 완료. Day 8에서 비·혼잡으로 못 갔으면 이 날 모토부 마을 대신 세소코 추가 가능.</p>
+        </div>
+      </div>
+
+      <div class="split-col care-team">
+        <h3><span class="tag">Care</span>돌봄조</h3>
+        <div class="dist">숙소 · 짐 정리 마무리</div>
+        <ul class="care-list">
+          <li>숙소에서 휴식</li>
+          <li><strong>짐 90% 패킹 완료</strong> — 다음날 06:30 체크아웃을 위한 전날 밤 패킹 필수</li>
+          <li>돌려줄 용품·기념품 분류, 수하물 무게 점검</li>
+          <li>아기와 마지막 산책</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 10 ========== -->
+<section class="day day-odd" id="day-10">
+  <div class="wrap">
+    <div class="day-head">
+      <div class="day-tag">
+        <span class="label">Day Ten</span>
+        <span class="num">10</span><span class="of">/ 10</span>
+        <span class="date">5월 7일 · 목요일<span class="holiday">출발일 · 전원</span></span>
+      </div>
+      <div class="day-headline">
+        <span class="kind kind-all">All Together · 출발</span>
+        <h2>새벽 체크아웃, <em>11:20 나하 출발</em></h2>
+        <p class="lede">
+          OKA 11:20 이륙 — 국제선 체크인 2시간 전 원칙이라 여유 시간은 없다.
+          전날 밤에 짐을 모두 싸두고, 새벽에 체크아웃해 바로 고속도로로. 나하공항 도착은 9시 전 목표.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-row pt-rest"><div class="tl-time">06:00</div><div class="tl-content">기상 — 마지막 짐 정리, 아침은 숙소에서 간단히</div></div>
+      <div class="tl-row pt-rest"><div class="tl-time">06:30</div><div class="tl-content">체크아웃, 숙소 정리 완료</div></div>
+      <div class="tl-row pt-move"><div class="tl-time">07:00</div><div class="tl-content">숙소 출발 → 나하공항 (90km / 1시간 30분, 고속도로 이용) <span class="detail">아침 러시 전 시간대라 도로 한산 예상.</span></div></div>
+      <div class="tl-row pt-move"><div class="tl-time">08:30</div><div class="tl-content"><strong>렌터카 반납</strong> (공항 근처 업체 → 셔틀로 공항 터미널까지 이동)</div></div>
+      <div class="tl-row"><div class="tl-time">09:00</div><div class="tl-content">공항 도착 → 국제선 체크인, 수하물 위탁</div></div>
+      <div class="tl-row pt-meal"><div class="tl-time">09:30 — 10:30</div><div class="tl-content">공항 내 아침 / 간단한 식사 — <strong>포크타마고 오니기리</strong>, 소바 등</div></div>
+      <div class="tl-row"><div class="tl-time">10:30 — 11:00</div><div class="tl-content">면세점 쇼핑, 탑승 게이트 이동</div></div>
+      <div class="tl-row pt-move"><div class="tl-time">11:20<small>OKA</small></div><div class="tl-content"><strong>나하 출발</strong></div></div>
+    </div>
+
+    <div class="day-notes">
+      <p class="day-note">국제선은 체크인 2시간 전이 안전선. 11:20 출발 → 09:20 체크인 완료 목표.</p>
+      <p class="day-note">전날(Day 9) 밤에 짐을 90% 이상 싸둘 것. 새벽에는 세면·정리만.</p>
+      <p class="day-note">렌터카 반납 시 주유는 전날 숙소 복귀 길 또는 나하 도착 전 IC 인근에서 미리.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOD GUIDE ========== -->
+<section class="section" id="food">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-num">A</div>
+      <div>
+        <div class="section-head-kicker">Food Guide · 食</div>
+        <h2 class="section-head-title">식당 · 두 곳은 반드시, 나머지는 여유롭게</h2>
+        <p class="section-head-lead">
+          아침은 숙소 자취로 해결하고, 점심만 외식으로 간다. 골든위크라 11시 30분 전 입성이 규칙.
+          고정 2곳과 지역별 대안을 함께 적었다.
+        </p>
+      </div>
+    </div>
+
+    <div class="food-grid">
+      <div>
+        <div class="hero-table-head">지정 식당 <span class="jp">Must Visit</span></div>
+        <p class="hero-table-lede">이 두 곳은 동선에 무조건 포함한다.</p>
+        <table class="ed-table">
+          <thead>
+            <tr><th>식당</th><th>위치 / 추천일</th><th>예산</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>てつこのそば</strong><br/><span class="mono" style="font-size:12px;color:var(--ink-soft)">モトブ町 具志堅760</span></td>
+              <td>모토부<br/><span style="font-size:12px;color:var(--coral)">Day 4 ★ · 9 재방문</span></td>
+              <td class="num">600~900엔</td>
+            </tr>
+            <tr>
+              <td><strong>海鮮食堂 太陽(티다)</strong><br/><span class="mono" style="font-size:12px;color:var(--ink-soft)">浦添市 牧港5-22-2</span><br/><span style="font-size:12px;color:var(--coral-deep)">월요일 휴무 · 11:00~15:30</span></td>
+              <td>우라소에<br/><span style="font-size:12px;color:var(--coral)">Day 3</span></td>
+              <td class="num">750~1,050엔</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <div class="hero-table-head">지역별 대안 <span class="jp">Backup</span></div>
+        <p class="hero-table-lede">줄이 너무 길거나 휴무일일 때.</p>
+        <table class="ed-table">
+          <thead>
+            <tr><th>지역</th><th>식당 / 메뉴</th><th>예산</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>모토부</td><td><strong>きしもと食堂</strong> · 오키나와소바 원조</td><td class="num">600~800엔</td></tr>
+            <tr><td>모토부</td><td><strong>岸本食堂</strong> · 소바 정식</td><td class="num">600~800엔</td></tr>
+            <tr><td>나고</td><td>나고소바 가도 각 매장</td><td class="num">600~900엔</td></tr>
+            <tr><td>코우리</td><td><strong>しらさ食堂</strong> · 해산물덮밥</td><td class="num">1,000~1,300엔</td></tr>
+            <tr><td>차탄</td><td><strong>りんくる食堂</strong> · 정식</td><td class="num">800~1,000엔</td></tr>
+            <tr><td>나하</td><td>마키시 공설시장 2층 · 해산물정식</td><td class="num">1,000~1,500엔</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DISTANCE ========== -->
+<section class="section" id="distance" style="background:linear-gradient(180deg,transparent,rgba(232,220,190,.35),transparent)">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-num">B</div>
+      <div>
+        <div class="section-head-kicker">Distance · 動線</div>
+        <h2 class="section-head-title">숙소를 기준점으로, <br/>모든 목적지의 거리</h2>
+        <p class="section-head-lead">
+          Saraswati에서 출발해 돌아오는 거리와 소요시간. 근거리 — 중거리 — 원거리로 나누었다.
+          아기 컨디션에 따라 근거리는 언제든 재배치 가능.
+        </p>
+      </div>
+    </div>
+
+    <div class="dist-wrap">
+      <div class="dist-group">
+        <h4>Near <small>근거리 · 5–18 km</small></h4>
+        <div class="dist-row"><span class="pl">나키진성터</span><span class="km">약 5 km</span><span class="min">15 분</span></div>
+        <div class="dist-row"><span class="pl">비세 후쿠기 가로수길</span><span class="km">약 7 km</span><span class="min">15 분</span></div>
+        <div class="dist-row"><span class="pl">てつこのそば</span><span class="km">약 8 km</span><span class="min">15 분</span></div>
+        <div class="dist-row"><span class="pl">츄라우미 수족관</span><span class="km">약 10 km</span><span class="min">20 분</span></div>
+        <div class="dist-row"><span class="pl">코우리섬 (코우리대교)</span><span class="km">약 12 km</span><span class="min">20 분</span></div>
+        <div class="dist-row"><span class="pl">나고 시내</span><span class="km">약 18 km</span><span class="min">25 분</span></div>
+      </div>
+
+      <div class="dist-group">
+        <h4>Mid <small>중거리 · 35–45 km</small></h4>
+        <div class="dist-row"><span class="pl">다이세키린잔</span><span class="km">약 40 km</span><span class="min">50 분</span></div>
+        <div class="dist-row"><span class="pl">잔파곶 (요미탄)</span><span class="km">약 40 km</span><span class="min">50 분</span></div>
+        <div class="dist-row"><span class="pl">아메리칸빌리지 (차탄)</span><span class="km">약 45 km</span><span class="min">55 분</span></div>
+        <div class="dist-row"><span class="pl">헤도곶</span><span class="km">약 45 km</span><span class="min">60 분</span></div>
+      </div>
+
+      <div class="dist-group">
+        <h4>Far <small>원거리 · 80–90 km</small></h4>
+        <div class="dist-row"><span class="pl">海鮮食堂 太陽 (우라소에)</span><span class="km">약 80 km</span><span class="min">1h 15m</span></div>
+        <div class="dist-row"><span class="pl">나하</span><span class="km">약 90 km</span><span class="min">1h 30m</span></div>
+        <div class="dist-row"><span class="pl">나하공항 (공항 → 숙소)</span><span class="km">약 90 km</span><span class="min">1h 30m · 고속</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TIPS ========== -->
+<section class="section" id="tips">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-num">C</div>
+      <div>
+        <div class="section-head-kicker">Notes · 備考</div>
+        <h2 class="section-head-title">준비 · 주의사항 · 플랜 B</h2>
+        <p class="section-head-lead">
+          골든위크를 가족 단위로 다닐 때 기억할 것들. 날씨 · 골든위크 · 예산 · 비상 대응.
+        </p>
+      </div>
+    </div>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <h4>날씨 · 복장</h4>
+        <span class="jp">Weather &amp; Clothing</span>
+        <ul class="tip-list">
+          <li><span class="k">기온</span><span class="v">4월 말 ~ 5월 초 · <strong>24–28 °C</strong>, 습도 높음</span></li>
+          <li><span class="k">복장</span><span class="v">반팔 + 얇은 겉옷, <strong>자외선 차단 필수</strong></span></li>
+          <li><span class="k">비</span><span class="v">장마 직전 · 소나기 가능 → <strong>우산 필수</strong></span></li>
+          <li><span class="k">바다</span><span class="v">해수욕 가능 시기, 수온 23–24 °C</span></li>
+        </ul>
+      </div>
+
+      <div class="tip-card">
+        <h4>골든위크 주의사항</h4>
+        <span class="jp">Golden Week</span>
+        <ul class="tip-list">
+          <li><span class="k">피크</span><span class="v"><strong>5/3(일) ~ 5/5(화)</strong> — Day 6은 <strong>나키진성 + 숙소 휴식</strong>으로 경량화</span></li>
+          <li><span class="k">식당</span><span class="v">인기 식당은 <strong>11:30 전 도착</strong>. 太陽은 11시 오픈 직후!</span></li>
+          <li><span class="k">코우리</span><span class="v">4/29(수·쇼와의 날) 선점, 오전 9시 전 진입, <strong>하트록 간조 시각 확인</strong></span></li>
+          <li><span class="k">츄라우미</span><span class="v">5/1(금) 개장 직후 + <strong>てつこのそば·후쿠기·에메랄드 번들</strong></span></li>
+          <li><span class="k">나하</span><span class="v">4/30(목) 6곳 압축, 시키나엔 제외</span></li>
+          <li><span class="k">세소코</span><span class="v">Day 8 오후 수영, 혼잡 시 Day 9로 연기</span></li>
+        </ul>
+      </div>
+
+      <div class="tip-card">
+        <h4>예산 · 점심 외식</h4>
+        <span class="jp">Budget</span>
+        <ul class="tip-list">
+          <li><span class="k">소바/정식</span><span class="v num" style="font-weight:500">600 — 1,000엔</span></li>
+          <li><span class="k">런치세트</span><span class="v num" style="font-weight:500">1,000 — 1,500엔</span></li>
+          <li><span class="k">해산물덮밥</span><span class="v num" style="font-weight:500">750 — 1,300엔</span></li>
+          <li><span class="k">식료품 1회</span><span class="v num" style="font-weight:500">5,000 — 8,000엔</span><br/><span style="font-size:12px;color:var(--ink-soft);grid-column:2">전원분</span></li>
+        </ul>
+      </div>
+
+      <div class="tip-card">
+        <h4>플랜 B 요약</h4>
+        <span class="jp">Contingency</span>
+        <ul class="tip-list">
+          <li><span class="k">아기 보챔</span><span class="v">일정 축소, 핵심 1곳만 보고 숙소 복귀 (근거리는 15~20분)</span></li>
+          <li><span class="k">비 / 악천후</span><span class="v">실내 대안: 츄라우미, 오리온 해피파크, 후르츠랜드</span></li>
+          <li><span class="k">더위 / 컨디션</span><span class="v">오전만 활동 후 복귀 → 낮잠 후 저녁 산책</span></li>
+          <li><span class="k">식당 혼잡</span><span class="v">대안 식당으로 변경 (각 Day에 명시)</span></li>
+          <li><span class="k">장소 혼잡</span><span class="v">근거리끼리 교체 — Day 2·4·6·8·9 유연하게</span></li>
+          <li><span class="k">수영 기회</span><span class="v">코우리비치(2) · 에메랄드(4) · 세소코(8) · 오쿠마(7, 산책)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-mark">
+        <em>Okinawa,</em><br/>until next time.
+        <small>沖縄 · また会いましょう</small>
+      </div>
+      <div class="foot-item">
+        <h5>Itinerary</h5>
+        2026년 4월 28일 — 5월 7일<br/>
+        9박 10일 · 나키진 베이스<br/>
+        렌터카 1대 · 전원 6명
+      </div>
+      <div class="foot-item">
+        <h5>Base</h5>
+        Saraswati<br/>
+        나키진촌 · 오키나와 北部<br/>
+        <span style="color:var(--coral)">緑 · 波 · 風</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ========== Day nav active state ==========
+(function(){
+  const links = document.querySelectorAll('.daynav-row a');
+  const sections = Array.from(links).map(a => document.querySelector(a.getAttribute('href')));
+
+  function onScroll(){
+    const y = window.scrollY + 160;
+    let activeIdx = -1;
+    sections.forEach((sec, i) => { if(sec && sec.offsetTop <= y) activeIdx = i; });
+    links.forEach((a, i) => a.classList.toggle('active', i === activeIdx));
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+// ========== Intersection reveal ==========
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.style.animation = 'fadeUp .7s ease forwards';
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+
+  document.querySelectorAll('.day, .section').forEach(el => {
+    el.style.opacity = '0';
+    el.style.animation = 'none';
+    io.observe(el);
+  });
+})();
+
+// ========== Map legend interactions ==========
+(function(){
+  const legendBtns = document.querySelectorAll('[data-day-route]');
+  const routesGrp  = document.getElementById('routes');
+  if(!legendBtns.length || !routesGrp) return;
+
+  let current = null;
+
+  function setActive(day){
+    document.querySelectorAll('.legend-day, .route, .pin-grp').forEach(el => el.classList.remove('active'));
+    routesGrp.classList.remove('has-active');
+
+    if(day == null){ current = null; return; }
+    current = day;
+
+    const btn   = document.querySelector('[data-day-route="'+day+'"]');
+    const route = document.querySelector('.r-day'+day);
+    const pins  = document.querySelectorAll('.pin-grp[data-day="'+day+'"]');
+
+    btn   && btn.classList.add('active');
+    route && route.classList.add('active');
+    pins.forEach(p => p.classList.add('active'));
+    routesGrp.classList.add('has-active');
+  }
+
+  legendBtns.forEach(btn => {
+    const day = btn.dataset.dayRoute;
+    btn.addEventListener('mouseenter', () => setActive(day));
+    btn.addEventListener('focus',      () => setActive(day));
+    btn.addEventListener('click',      () => setActive(current === day ? null : day));
+  });
+
+  // Cycle a hint on first appearance so users notice interactivity
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(!e.isIntersecting) return;
+      io.disconnect();
+      let i = 0;
+      const order = ['1','5','7','10'];
+      const tick = () => {
+        if(i >= order.length){ setActive(null); return; }
+        setActive(order[i++]);
+        setTimeout(tick, 650);
+      };
+      setTimeout(tick, 300);
+    });
+  }, { threshold: 0.35 });
+  const mapSection = document.getElementById('map');
+  mapSection && io.observe(mapSection);
+})();
+</script>
+
+</body>
+</html>
