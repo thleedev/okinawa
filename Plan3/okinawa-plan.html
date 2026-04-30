@@ -337,6 +337,36 @@ body {
 .rest-row { display: flex; gap: 6px; margin-top: 4px; align-items: flex-start; }
 .rest-label { min-width: 38px; font-weight: 600; color: var(--text); flex-shrink: 0; }
 .rest-closed { color: #dc2626; font-weight: 600; }
+.map-link {
+  display: inline-block;
+  font-size: 11px;
+  background: var(--ocean);
+  color: white !important;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-left: 6px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.map-link:hover { opacity: 0.85; }
+.rest-list-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.rest-list-item:last-child { border-bottom: none; }
+.rest-list-item .rli-name { font-weight: 700; color: var(--text); }
+.rest-list-item .rli-meta { color: var(--text-light); font-size: 12px; }
+.rest-cat-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ocean);
+  margin: 14px 0 6px;
+  padding-left: 6px;
+  border-left: 3px solid var(--ocean);
+}
 
 /* ── 체크리스트 ── */
 .check-item {
